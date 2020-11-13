@@ -14,6 +14,7 @@ section {
     margin-right: 2rem;
 }
 
+
 .header {
     position: fixed;
     top: 0;
@@ -23,9 +24,13 @@ section {
     z-index: 10000;
     transition: all 0.2s ease-in-out;
     height: 80px;
-    background-color: #D3D3D3;
+    background-color: #EDCD1F;
     text-align: center;
     line-height: 30px;
+}
+
+.navbar-content {
+    color: black;
 }
 
 .navbar {
@@ -41,7 +46,7 @@ section {
 }
 
 .nav-bg-light {
-    background-color: #C6C6C6 !important;
+    background-color: #EDCD1F !important;
 }
 
 .carousel-inner img {
