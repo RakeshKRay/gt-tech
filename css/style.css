@@ -14,7 +14,6 @@ section {
     margin-right: 2rem;
 }
 
-
 .header {
     position: fixed;
     top: 0;
@@ -24,13 +23,9 @@ section {
     z-index: 10000;
     transition: all 0.2s ease-in-out;
     height: 80px;
-    background-color: #EDCD1F;
+    background-color: #D3D3D3;
     text-align: center;
     line-height: 30px;
-}
-
-.navbar-content {
-    color: black;
 }
 
 .navbar {
@@ -46,7 +41,7 @@ section {
 }
 
 .nav-bg-light {
-    background-color: #EDCD1F !important;
+    background-color: #C6C6C6 !important;
 }
 
 .carousel-inner img {
@@ -383,3 +378,57 @@ Large (lg) devices (desktops, 992px and up)
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
+
+
+.navbar{
+background: -webkit-linear-gradient(left,  rgb(255,255,255) 0%,rgb(255,255,255) 20%,rgb(125,185,232) 20%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgb(237,205,31) 0%,rgb(237,205,31) 20%,rgb(30,45,59) 20%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edcd1f', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 */
+
+}
+
+/*********************** for the dim effect start*******************/
+
+.wrapper{
+font-family:sans-serif;
+width: 80%;
+margin: 0 auto;
+position:relative;
+}
+.wrapper img{
+opacity: 1;
+display: block;
+width:100%;
+height: auto;
+transition: .5s ease;
+}
+.content{
+position: absolute;
+top:45%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+text-transform: uppercase;
+font-size: 40px;
+color:#0f0f0f;
+white-space: nowrap;
+overflow: hidden
+}
+.content a{
+font-size: 15px;
+display: block;
+background-color: #ff771d;
+text-align: center;
+padding: 10px;
+cursor: pointer
+}
+.overlay{
+opacity: 0
+}
+.wrapper:hover img{
+opacity: .5
+}
+.wrapper:hover .overlay{
+opacity: 1
+}
+/*********************** for the dim effect end*******************/
