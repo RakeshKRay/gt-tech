@@ -7,8 +7,11 @@
     <title>GT Tech</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
@@ -69,7 +72,32 @@
     <section id="Gallery">
 
         <h1 style="text-align: center;margin-top: 25px;">Gallery</h1>
-
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="row">
+                    <a href="img/Z12.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <img src="img/Z12.JPG" class="img-fluid">
+                    </a>
+                    <a href="img/Z11%20(1).JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <img src="img/Z11%20(1).JPG" class="img-fluid">
+                    </a>
+                    <a href="img/Z13.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <img src="img/Z13.JPG" class="img-fluid">
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="img/Z14.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <img src="img/Z14.JPG" class="img-fluid">
+                    </a>
+                    <a href="img/Front.PNG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <img src="img/Front.PNG" class="img-fluid">
+                    </a>
+                    <a href="img/back.PNG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <img src="img/back.PNG" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </div>
 
     </section>
     <!--- Footer -->
@@ -114,7 +142,23 @@
                 </div>
             </div>
         </footer>
+    </section>
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+        $(this).ekkoLightbox({
+            alwaysShowClose: true,
+            onShown: function() {
+                console.log('Checking our the events huh?');
+            },
+            onNavigate: function(direction, itemIndex) {
+                console.log('Navigating ' + direction + '. Current item: ' + itemIndex);
+            }
+        });
 
+    </script>
 </body>
 
 </html>

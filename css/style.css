@@ -165,6 +165,10 @@ tr:nth-child(odd) {
     margin-bottom: 1rem;
 }
 
+.welcome h2 {
+    text-align: center !important;
+}
+
 h1,
 h2,
 h3,
@@ -273,6 +277,16 @@ hr.light-100 {
         font-size: 2.5em;
         padding: 1.2rem;
     }
+
+    .welcome {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 2rem;
+    }
+
+    .navbar {
+        background: #edcd1f !important;
+    }
 }
 
 @media (max-width: 576px) {
@@ -308,6 +322,16 @@ hr.light-100 {
 
     .emoj img {
         font-size: 1em;
+    }
+
+    section {
+        padding-top: 5.5rem;
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+
+    .navbar {
+        background: #edcd1f !important;
     }
 }
 
