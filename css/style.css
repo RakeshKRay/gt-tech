@@ -14,6 +14,12 @@ section {
     margin-right: 2rem;
 }
 
+.container-section {
+    padding-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -371,6 +377,12 @@ hr.light-100 {
         margin-right: .5rem;
     }
 
+    .container-section {
+        padding-top: .7rem;
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+
     .navbar {
         background: #edcd1f !important;
     }
@@ -459,9 +471,10 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 .wrapper {
     font-family: sans-serif;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     position: relative;
+    text-align: center;
 }
 
 .wrapper img {
@@ -504,6 +517,12 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 .wrapper:hover .overlay {
     opacity: 1
+}
+
+.description {
+    font-size: 30%;
+    width: 90%;
+    white-space: pre-wrap;
 }
 
 /*********************** for the dim effect end*******************/
