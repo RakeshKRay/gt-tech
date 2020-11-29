@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
 
 <head>
@@ -14,12 +14,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/gallery.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <link href="css/style.css" rel="stylesheet">
     <!--<link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css">-->
 </head>
 
-<body>
+<body class="bg-light">
     <!-- Navigation -->
     <header>
         <div class="header">
@@ -72,32 +73,137 @@
     <section id="Gallery">
 
         <h1 style="text-align: center;margin-top: 25px;">Gallery</h1>
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="row">
-                    <a href="img/Z12.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                        <img src="img/Z12.JPG" class="img-fluid">
-                    </a>
-                    <a href="img/Z11%20(1).JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                        <img src="img/Z11%20(1).JPG" class="img-fluid">
-                    </a>
-                    <a href="img/Z13.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                        <img src="img/Z13.JPG" class="img-fluid">
-                    </a>
-                </div>
-                <div class="row">
-                    <a href="img/Z14.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                        <img src="img/Z14.JPG" class="img-fluid">
-                    </a>
-                    <a href="img/Front.PNG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                        <img src="img/Front.PNG" class="img-fluid">
-                    </a>
-                    <a href="img/back.PNG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                        <img src="img/back.PNG" class="img-fluid">
-                    </a>
+        <div class="container">
+	<div class="row">
+		<div class="row">
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                   data-image="img/Z11%20(1).JPG"
+                   data-target="#image-gallery">
+                    <img class="img-thumbnail c-img"
+                         src="img/Z11%20(1).JPG"
+                         alt="Another alt text">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                   data-image="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                   data-target="#image-gallery">
+                    <img class="img-thumbnail c-img"
+                         src="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                         alt="Another alt text">
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                   data-image="https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                   data-target="#image-gallery">
+                    <img class="img-thumbnail c-img"
+                         src="https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                         alt="Another alt text">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Test1"
+                   data-image="img/Z13.JPG"
+                   data-target="#image-gallery">
+                    <img class="img-thumbnail c-img"
+                         src="img/Z13.JPG">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
+                   data-image="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                   data-target="#image-gallery">
+                    <img class="img-thumbnail c-img"
+                         src="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                         alt="Another alt text">
+                </a>
+            </div>
+
+
+
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
+                   data-image="https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                   data-target="#image-gallery">
+                    <img class="img-thumbnail c-img"
+                         src="https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                         alt="Another alt text">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
+                   data-image="img/Z13.JPG"
+                   data-target="#image-gallery">
+                    <img class="img-thumbnail c-img"
+                         src="img/Z13.JPG">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
+                   data-image="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                   data-target="#image-gallery">
+                    <img class="img-thumbnail c-img"
+                         src="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                         alt="Another alt text">
+                </a>
+            </div>
+
+
+
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
+                   data-image="https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                   data-target="#image-gallery">
+                    <img class="img-thumbnail c-img"
+                         src="https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                         alt="Another alt text">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
+                   data-image="img/Front.PNG">
+                    <img class="img-thumbnail c-img"
+                         src="img/Front.PNG">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
+                   data-image="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                   data-target="#image-gallery">
+                    <img class="img-thumbnail c-img"
+                         src="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                         alt="Another alt text">
+                </a>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="image-gallery-title"></h4>
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img id="image-gallery-image" class="img-responsive col-md-12" src="">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i class="fa fa-arrow-left"></i>
+                        </button>
+
+                        <button type="button" id="show-next-image" class="btn btn-secondary float-right"><i class="fa fa-arrow-right"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
+	</div>
+</div>
 
     </section>
     <!--- Footer -->

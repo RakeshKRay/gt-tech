@@ -526,3 +526,28 @@ Extra (xl) large devices (large desktops, 1200px and up)
 }
 
 /*********************** for the dim effect end*******************/
+.btn:focus, .btn:active, button:focus, button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#image-gallery .modal-footer{
+  display: block;
+}
+.c-img{
+    height: 200px;
+    width: 300px;
+}
+.thumb{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width:600px){
+	
+	.thumb{
+  margin-top: 15px;
+  margin-bottom: 15px;
+margin-left: 20px        
+}
+}
