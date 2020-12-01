@@ -56,6 +56,10 @@ section.oddSection {
     font-size: 1.1em !important;
 }
 
+.nav-color {
+    color: #fff !important;
+}
+
 .nav-bg-light {
     background-color: #C6C6C6 !important;
 }
@@ -280,12 +284,7 @@ hr.light-100 {
 
 
 /*---Media Queries --*/
-@media (max-width: 992px) {
-    .social a {
-        font-size: 4em;
-        padding: 2rem;
-    }
-}
+@media (max-width: 992px) {}
 
 @media (max-width: 768px) {
     .carousel-caption {
@@ -311,11 +310,6 @@ hr.light-100 {
         font-size: 200%;
     }
 
-    .social a {
-        font-size: 2.5em;
-        padding: 1.2rem;
-    }
-
     .welcome {
         width: 100%;
         margin: 0 auto;
@@ -324,6 +318,10 @@ hr.light-100 {
 
     .navbar {
         background: #edcd1f !important;
+    }
+
+    .nav-color {
+        color: #000 !important;
     }
 }
 
@@ -353,15 +351,6 @@ hr.light-100 {
         font-size: 160%;
     }
 
-    .social a {
-        font-size: 2em;
-        padding: .7rem;
-    }
-
-    .emoj img {
-        font-size: 1em;
-    }
-
     section {
         padding-top: 5.5rem;
         margin-left: .5rem;
@@ -376,6 +365,10 @@ hr.light-100 {
 
     .navbar {
         background: #edcd1f !important;
+    }
+
+    .nav-color {
+        color: #000 !important;
     }
 }
 
