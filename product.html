@@ -16,57 +16,18 @@
     <script src="js/bootstrap.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <link href="css/style.css" rel="stylesheet">
+    <script>
+        $(function() {
+            $("#includeFooter").load("footer.html");
+            $("#includeHeader").load("header.html");
+        });
+
+    </script>
 </head>
 
 <body style="font-family: 'Nunito', sans-serif;">
     <!-- Navigation -->
-    <header>
-        <div class="header">
-            <nav class="navbar navbar-expand-md navbar-light nav-bg-light position-sticky ">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="img/logo2.png" width="210" height="64"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarResponsive">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link nav-color" href="index.html">HOME</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-color" href="company.html">COMPANY</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-color" href="industry.html">INDUSTRY</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link nav-color dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                                    WE OFFER
-                                </a>
-                                <div class="dropdown-bg dropdown-menu">
-                                    <a class="dropdown-item nav-color" href="solution.html">SOLUTIONS</a>
-                                    <a class="dropdown-item nav-color" href="product.html">PRODUCTS</a>
-                                </div>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link nav-color" href="gallery.html">GALLERY</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-color" href="blog.html">BLOG</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-color" href="career.html">CAREER</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-color" href="contact.html">CONTACT</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <div id="includeHeader"></div>
 
 
     <section class="topSection" id="product">
@@ -236,49 +197,7 @@
         </div>
     </section>
     <!--- Footer -->
-    <section style="" id="contact">
-        <footer>
-            <div class="container-fluid padding">
-                <div class="row text-center">
-                    <div class="col-md-3">
-                        <img src="img/logo1.png" width="210" height="64">
-                        <hr class="light">
-
-                    </div>
-                    <div class="col-md-3">
-                        <h6>Office Location</h6>
-                        <hr class="light">
-
-                        <p>500 Terry francois street<br>San Francisco, CA 94158</p>
-                        <p>500 Terry francois street<br>San Francisco, CA 94158</p>
-                    </div>
-                    <div class="col-md-3">
-                        <h6>Quick Lines</h6>
-                        <hr class="light">
-                        <p>Home</p>
-                        <p>Company</p>
-                        <p>Industry</p>
-                        <p>Solutions</p>
-                        <p>Products</p>
-                    </div>
-                    <div class="col-md-3">
-                        <h6>More Info</h6>
-                        <hr class="light">
-                        <p>info@gramtarang.ac.in</p>
-                        <p>Tel: 123-456-7890</p>
-                        <p>Fax: 123-456-7890</p>
-                        <p></p>
-                        <p></p>
-                    </div>
-                    <div class="col-12">
-                        <hr class="light">
-                        <h5>&copy; maren.co.in</h5>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </section>
-
+    <div id="includeFooter"></div>
 
 </body>
 
