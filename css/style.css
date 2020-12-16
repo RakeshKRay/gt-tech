@@ -12,6 +12,7 @@ section {
     padding-top: 1.5rem;
     margin-left: 2rem;
     margin-right: 2rem;
+    padding-bottom: 1.5rem;
 }
 
 .container-section {
@@ -377,6 +378,7 @@ hr.light-100 {
         padding-top: 1.0rem;
         margin-left: .5rem;
         margin-right: .5rem;
+        padding-bottom: 1.0rem;
     }
 
     .container-section {
@@ -466,7 +468,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
 .navbar {
     background: -webkit-linear-gradient(left, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 20%, rgb(125, 185, 232) 20%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgb(237, 205, 31) 0%, rgb(237, 205, 31) 20%, rgb(30, 45, 59) 80%);
+    background: linear-gradient(to right, rgb(237, 205, 31) 0%, rgb(237, 205, 31) 250px, rgb(30, 45, 59) 250px);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#edcd1f', endColorstr='#7db9e8', GradientType=1);
     /* IE6-9 */
