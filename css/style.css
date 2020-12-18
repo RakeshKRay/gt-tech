@@ -6,8 +6,16 @@ body {
     width: 100%;
     font-family: 'Merriweather', serif;
     color: #222;
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
-
+#image.img{
+    height: 100px;
+    width: 100px;
+}
 section {
     padding-top: 1.0rem;
     margin-left: 2rem;
@@ -126,8 +134,6 @@ section.oddSection {
     margin-left: 1rem;
     margin-right: 1rem;
 }
-
-.team {}
 
 .team img {
     max-height: 10rem;
@@ -295,7 +301,6 @@ hr.light-100 {
     margin-top: .8rem;
     margin-bottom: 1rem;
 }
-
 
 
 /*---Media Queries --*/
