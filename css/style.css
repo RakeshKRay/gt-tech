@@ -6,7 +6,7 @@ body {
     width: 100%;
     font-family: 'Merriweather', serif;
     color: #222;
-    background-image: url('');
+    background-image: url('../img/bg.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -121,7 +121,7 @@ section.oddSection {
 .carousel-product {
     margin-top: 1rem;
     margin-bottom: 1rem;
-    background-color: #fff !important;
+    /* background-color: #fff !important; */
     color: black;
     text-align: justify;
 }
