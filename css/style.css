@@ -586,3 +586,25 @@ button:active {
         margin-left: 20px
     }
 }
+.roundedCorner
+{
+  width:90%;height:90%;
+  border: solid 1px #555;
+  background-color: #eed;
+  box-shadow: 10px -10px 5px  rgba(0,0,0,0.6);
+  -moz-box-shadow: 10px -10px 5px  rgba(0,0,0,0.6);
+  -webkit-box-shadow: 10px -10px 5px  rgba(0,0,0,0.6);
+  -o-box-shadow: 10px -10px 5px  rgba(0,0,0,0.6);
+  border-radius:25px;
+}
+.circle
+{
+  width:250px;height:250px;
+  border: solid 1px #555;
+  background-color: rgb(189, 189, 15);
+  box-shadow: 20px -20px  rgba(0,0,0,0.6);
+  -moz-box-shadow: 20px -20px  rgba(0,0,0,0.6);
+  -webkit-box-shadow: 20px -20px  rgba(0,0,0,0.6);
+  -o-box-shadow: 20px -20px  rgba(0,0,0,0.6);
+  border-radius:100px;
+}
