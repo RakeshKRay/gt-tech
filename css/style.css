@@ -34,7 +34,11 @@ section.oddSection {
     margin-right: 0rem;
     background-color: #F8F6F3;
 }
-
+.footer{
+    background-color: #3f3f3f;
+    color: #ffffff;
+    padding-top: 0rem;
+}
 .topSection {
     padding-top: 6.5rem;
 }
@@ -250,9 +254,9 @@ h6 {
     display: inline-block;
     text-align: center;
     line-height: 104px;
-    border: 2px solid #fff;
+    border: 2px solid rgb(158, 74, 74);
     border-radius: 50%;
-    background-color: #5d5d5b;
+    background-color: rgba(114, 223, 231, 0.356);
     text-decoration: none;
     position: relative;
 }
@@ -277,12 +281,6 @@ h6 {
     letter-spacing: 1px;
 }
 
-footer {
-    background-color: #3f3f3f;
-    color: #d5d5d5;
-    padding-top: 2rem;
-
-}
 
 hr.light {
     border-top: 1px solid #d5d5d5;
@@ -301,7 +299,10 @@ hr.light-100 {
     margin-top: .8rem;
     margin-bottom: 1rem;
 }
-
+.icon img{
+    height: 50px;
+    width: 50px;
+}
 /*---Media Queries --*/
 @media (max-width: 992px) {
     .social a {
@@ -608,3 +609,4 @@ button:active {
   -o-box-shadow: 20px -20px  rgba(0,0,0,0.6);
   border-radius:100px;
 }
+
