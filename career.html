@@ -695,9 +695,272 @@
             </div>
           </div>
     </section>
+    <div data-toggle="modal" data-target="#contactUs1" style="position: fixed;
+    right: 20px;
+    bottom: 15px;z-index:99999;
+    text-shadow: none;
+    font-size: 13px !important;
+    letter-spacing: 0px;
+    text-transform: capitalize;"><img id="imagesdk" src="img/logo2.png" style="width:150px;
+    border-radius: 0px;"></div>
+    <div id="contactUs1" class="modal fade" role="dialog" style="text-align: center; display: none;" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="border: none;  padding-bottom: 0px;">
+                    <h4 class="modal-title"
+                        style="float:left;width:90%;      padding-left: 8%;  font-size: 20px;    color: #633404;">
+                        Apply Job </h4>
+                    <button type="button" class="close" data-dismiss="modal"
+                        style="float:right;width:10%;    margin: -1rem 0rem -1rem auto;">×</button>
+
+                </div>
+                <div class="modal-body">
+                    <form action="applyUs.php" method="post">
+
+                        <div class="col_half">
+                            <input type="text" id="recipe-contactform-name" name="fname" value=""
+                                placeholder="Full Name" class="form-control form-control-pill required">
+                        </div>
+                        <div class="col_half col_last">
+                            <input type="date" id="recipe-contactform-email" name="Date of Birth" value=""
+                                placeholder="Date of Birth" class="required date form-control form-control-pill">
+                        </div>
+                        <div class="clear"></div>
+
+                        <div class="col_half">
+                            <input type="number" id="recipe-contactform-phone" name="exp" placeholder="Years of Experience" value=""
+                                class="form-control form-control-pill">
+                        </div>
+                        <div class="col_half col_last">
+                            <input type="text" id="recipe-contactform-subject" name="location" placeholder="Current location"
+                                value="" class="required form-control form-control-pill">
+                        </div>
+                        <div class="clear"></div>
+
+                        <div class="col_half">
+                            <input type="number" id="recipe-contactform-phone" name="phone" placeholder="Phone no" value=""
+                                class="form-control form-control-pill">
+                        </div>
+                        <div class="col_half col_last">
+                            <input type="email" id="recipe-contactform-subject" name="email" placeholder="Email Id"
+                                value="" class="required form-control form-control-pill">
+                        </div>
+                        <div class="clear"></div>
+
+                        <div class="col_half">
+                            <input type="text" id="recipe-contactform-phone" name="desc" placeholder="Present Designation" value=""
+                                class="form-control form-control-pill">
+                        </div>
+                        <div class="col_half col_last">
+                            <input type="text" id="recipe-contactform-subject" name="applyDesc" placeholder="Applying for"
+                                value="" class="required form-control form-control-pill">
+                        </div>
+                        <div class="clear"></div>
+                        <div class="col_half"></div>
+                        <div class="col_half col_last btn btn-primary btn-file btn-circle btn-sm">
+                            Upload CV <input type="file" id="recipe-contactform-subject" name="cv" 
+                                value="Add CV" class="required d-none">
+                        </div>
+                        <div class="clear"></div>
+                        <div class="col_full">
+                            <button class="button button-circle button-large" type="submit"
+                                id="recipe-contactform-submit1" name="request" value="submit">Apply Now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--- Footer -->
     <div class="footer" style="padding-top: .5rem;" id="includeFooter"></div>
 
 </body>
+<style>
+    .tp-revslider-slidesli[data-liquideffect] .tp-bgimg {
+        display: block !important
+    }
 
+    .button.button-large {
+        padding: 0 17px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 13px;
+        text-transform: capitalize;
+        font-weight: 500;
+        letter-spacing: 0px;
+        margin-top: 5px !important;
+        width: 110px;
+    }
+
+    .button {
+        background-color: #267df4;
+    }
+
+    #home .recipe-itmes .card-title {
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+
+    .modal-header {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 10px 10px;
+        border-bottom: 0px solid #dee2e6;
+    }
+
+    .modal-dialog {
+        max-width: 700px;
+        margin: 2.75rem auto;
+    }
+
+
+    .modal-content .form-control-pill {
+        border-radius: 23px;
+        font-size: 13px;
+        height: 45px;
+    }
+
+    .modal-content textarea {
+        height: 150px !important;
+    }
+
+    #contactUs1 .modal-content textarea {
+        height: 100px !important;
+    }
+
+    .button {
+        background-color: #ff9800;
+    }
+</style>
+<style>
+    #contactUs1 .button.button-large {
+        padding: 0 12px;
+        font-size: 13px;
+        height: 35px;
+        line-height: 35px;
+        text-transform: capitalize;
+        text-shadow: none;
+    }
+
+    #contactUs1 .modal-content .form-control-pill {
+        border-radius: 23px;
+        font-size: 13px;
+        height: 38px;
+    }
+
+    #contactUs1 textarea.form-control {
+        height: 80px;
+    }
+
+    #contactUs1 .form-control {
+        padding: 15px;
+    }
+
+
+    #contactUs1 .modal-content {
+        padding: 7px 0px;
+    }
+
+    #contactUs1 .modal-dialog {
+        max-width: 463px;
+        margin: 10.75rem auto;
+        float: right;
+        margin-bottom: 0px;
+        width: 455px;
+    }
+
+
+    #contactUs1 .col_full {
+        margin-bottom: 0px;
+    }
+
+    #contactUs1 .col_half,
+    #contactUs1 .postcontent.bothsidebar {
+        width: 48%;
+        margin-bottom: 10px !important;
+    }
+
+    #header.transparent-header {
+        background: #fff0;
+        border-bottom: none;
+        z-index: 199;
+        position: absolute;
+        width: 100%;
+    }
+
+    #header-wrap:before {
+        width: 62%;
+    }
+
+    #primary-menu1 {
+        display: block;
+    }
+
+    #primary-menu {
+        display: none;
+    }
+
+    #basicExampleModal .modal-content {
+        border-radius: 0px;
+        padding: 0px;
+    }
+
+    .button.button-large.button-circle {
+        border-radius: 23px;
+    }
+
+    .button {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        outline: 0;
+        white-space: nowrap;
+        margin: 5px;
+        padding: 0 22px;
+        font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+        background-color: #1abc9c;
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border: none;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    }
+
+    .col_last {
+        margin-right: 0 !important;
+        float: right;
+        clear: right;
+    }
+
+    .col_half {
+        width: 48%;
+        display: block;
+        position: relative;
+        margin-right: 4%;
+        margin-bottom: 50px;
+        float: left;
+    }
+
+    .clear {
+        clear: both;
+        display: block;
+        font-size: 0;
+        height: 0;
+        line-height: 0;
+        width: 100%;
+        overflow: hidden;
+    }
+    .btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+</style>
 </html>
