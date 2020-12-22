@@ -60,7 +60,19 @@ section.oddSection {
 .navbar {
     padding: .8rem;
 }
-
+.nav-item:hover{
+    background-color: rgba(227, 243, 9, 0.411);
+}
+.current{
+    background-color: rgb(5, 5, 5);
+}
+.nav-item a{
+    color: aquamarine;
+    display: inline-block;
+    padding: 0.5em .75em;
+    border-radius: 4px;
+    text-decoration: none;
+}
 .navbar-nav li {
     padding-right: 20px;
 }
