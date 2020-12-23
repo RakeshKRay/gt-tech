@@ -59,22 +59,33 @@ section.oddSection {
 
 .navbar {
     padding: .8rem;
+    background: -webkit-linear-gradient(left, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 20%, rgb(125, 185, 232) 20%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgb(237, 205, 31) 0%, rgb(237, 205, 31) 250px,#3f3f3f 250px);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#edcd1f', endColorstr='#7db9e8', GradientType=1);
+    /* IE6-9 */
+
 }
+
 .nav-item:hover{
     background-color: rgba(227, 243, 9, 0.411);
+    border-radius: 23px;
 }
 .current{
-    background-color: rgb(5, 5, 5);
+    background-color: rgba(227, 243, 9, 0.411);
+    border-radius:25px;
 }
 .nav-item a{
     color: aquamarine;
     display: inline-block;
-    padding: 0.5em .75em;
-    border-radius: 4px;
+    padding: .5em .75em;
+    border-radius: 23px;
     text-decoration: none;
 }
 .navbar-nav li {
-    padding-right: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .nav-link {
@@ -88,7 +99,10 @@ section.oddSection {
 .nav-bg-light {
     background-color: #C6C6C6 !important;
 }
-
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+ }
 .dropdown-item:hover,
 .dropdown-item:focus {
     color: #000 !important;
@@ -97,7 +111,8 @@ section.oddSection {
 }
 
 .dropdown-bg {
-    background-color: #000 !important;
+    background-color: #3f3f3f !important;
+    border-radius:25px;
 }
 
 .carousel-inner img {
@@ -500,15 +515,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
 */
 
 
-.navbar {
-    background: -webkit-linear-gradient(left, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 20%, rgb(125, 185, 232) 20%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgb(237, 205, 31) 0%, rgb(237, 205, 31) 250px, rgb(30, 45, 59) 250px);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#edcd1f', endColorstr='#7db9e8', GradientType=1);
-    /* IE6-9 */
 
-}
 
 /*********************** for the dim effect start*******************/
 
