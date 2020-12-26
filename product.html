@@ -38,9 +38,9 @@
     <!--- Image Slider -->
     <section class="topSection" id="product">
 
-        <h1 style="text-align: center;" class="mt-5">Product Design &amp; Development</h1>
+        <h1 style="text-align: center; margin-bottom: 1rem;">Product Design &amp; Development</h1>
 
-        <div id="slidesp" class="carousel slide " data-ride="carousel" style="width: 90%;margin: auto;height: 300px">
+        <div id="slidesp" class="carousel slide " data-ride="carousel" style="width: 90%;margin: auto;height: 220px">
             <ul class="carousel-indicators">
                 <li data-target="#slidesp" data-slide-to="0" class="active"></li>
                 <li data-target="#slidesp" data-slide-to="1"></li>
@@ -136,68 +136,68 @@
     </section>
 
     <section>
-        <div class=" row responsive" style="padding-left: 2rem; padding-right: 2rem;">
+        <div class=" row responsive centered">
             <div>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="img/Z13.JPG" alt="Card image cap">
+                <div class="card" style="width: 15rem;">
+                    <img class="card-img-top cardImgSlick" src="img/e-rick/Z13.JPG" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text">E-Auto design.</p>
                     </div>
                 </div>
             </div>
             <div>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top " src="img/3d print/_MG_6121.JPG" alt="Card image cap">
+                <div class="card" style="width: 15rem;">
+                    <img class="card-img-top cardImgSlick" src="img/3d-print/_MG_6121.JPG" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text">3D Printed Face.</p>
                     </div>
                 </div>
             </div>
             <div>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="img/Model.7.jpg" alt="Card image cap">
+                <div class="card" style="width: 15rem;">
+                    <img class="card-img-top cardImgSlick" src="img/e-rick/Model.7.jpg" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text">E-Vehicle Model</p>
                     </div>
                 </div>
             </div>
             <div>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top " src="img/3d print/_MG_6131.JPG" alt="Card image cap">
+                <div class="card" style="width: 15rem;">
+                    <img class="card-img-top cardImgSlick" src="img/3d-print/_MG_6131.JPG" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text">3D Printed Port.</p>
                     </div>
                 </div>
             </div>
-            
+
             <div>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="img/E-rickshaw (4).png" alt="Card image cap">
+                <div class="card" style="width: 15rem;">
+                    <img class="card-img-top cardImgSlick" src="img/e-rick/E-rickshaw.png" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text">E-Rickshaw Design.</p>
                     </div>
                 </div>
             </div>
-            
+
             <div>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="img/3d print/_MG_6200.JPG" alt="Card image cap">
+                <div class="card" style="width: 15rem;">
+                    <img class="card-img-top cardImgSlick" src="img/3d-print/_MG_6200.JPG" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text">3D Printed Heart.</p>
                     </div>
                 </div>
             </div>
             <div>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="img/railway.png" alt="Card image cap">
+                <div class="card" style="width: 15rem;">
+                    <img class="card-img-top cardImgSlick" src="img/railway.png" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text">Railway Engine Design.</p>
                     </div>
                 </div>
             </div>
             <div>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="img/3d print/_MG_6225.JPG" alt="Card image cap">
+                <div class="card" style="width: 15rem;">
+                    <img class="card-img-top cardImgSlick" src="img/3d-print/_MG_6225.JPG" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text text-center">3D Printed God.</p>
                     </div>
@@ -205,7 +205,31 @@
             </div>
         </div>
     </section>
+    <style>
+        .cardImgSlick {
+            height: 100px;
+            
+        }
 
+        .slick-track {
+            margin: 0;
+        }
+
+        .slick-prev,
+        .slick-next {
+            z-index: 10;
+            top: 0px;
+            background-color: transparent;
+        }
+
+        .slick-prev {
+            left: 10px;
+        }
+
+        .slick-next {
+            right: 10px;
+        }
+    </style>
     <div class="footer" style="padding-top: .5rem;" id="includeFooter"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
@@ -216,38 +240,32 @@
             dots: true,
             infinite: true,
             speed: 300,
-            slidesToShow: 4,
+            slidesToShow: 3,
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 2000,
-            arrow:true,
+            arrow: true,
+            centerMode: true,
             responsive: [
+
                 {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
-                        infinite: true,
-                        dots: true
-                    }
-                },
-                {
-                    breakpoint: 600,
+                    breakpoint: 1000,
                     settings: {
                         slidesToShow: 2,
-                        slidesToScroll: 2
+                        slidesToScroll: 2,
+                        infinite: true,
+                        dots: true,
+                        centerMode: true,
                     }
                 },
                 {
-                    breakpoint: 480,
+                    breakpoint: 700,
                     settings: {
                         slidesToShow: 1,
-                        slidesToScroll: 1
+                        slidesToScroll: 1,
+                        centerMode: true,
                     }
                 }
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
             ]
         });
     </script>

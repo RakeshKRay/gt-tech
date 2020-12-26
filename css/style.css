@@ -107,7 +107,7 @@ section.oddSection {
 .dropdown-item:focus {
     color: #000 !important;
     text-decoration: none;
-    background-color: #edcd1f;
+    background-color: rgba(227, 243, 9, 0.411);
 }
 
 .dropdown-bg {

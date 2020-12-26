@@ -17,9 +17,10 @@
                         <li class="nav-item">
                             <a class="nav-link nav-color" href="industry.html">INDUSTRY</a>
                         </li>
-                        
+
                         <li class="nav-item dropdown">
-                            <a class="nav-link nav-color dropdown-toggle" href="#" id="navbardrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link nav-color dropdown-toggle" href="#" id="navbardrop" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 WE OFFER
                             </a>
                             <div class="dropdown-bg dropdown-menu" aria-labelledby="navbardrop">
@@ -48,39 +49,24 @@
     </div>
 </header>
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
 
-// Get current page URL
-var url = window.location.href;
+        var url = window.location.href;
+        url = url.substring(0, (url.indexOf("#") == -1) ? url.length : url.indexOf("#"));
+        url = url.substring(0, (url.indexOf("?") == -1) ? url.length : url.indexOf("?"));
+        url = url.substr(url.lastIndexOf("/") + 1);
+        if (url == '') {
+            url = 'index.html';
+        } if (url == 'solution.html' || url == 'service.html' || url == 'product.html')
+            url = '#';
+        $('#navbarResponsive li').each(function () {
 
-// remove # from URL
-url = url.substring(0, (url.indexOf("#") == -1) ? url.length : url.indexOf("#"));
+            var href = $(this).find('a').attr('href');
+            if (url == href) {
 
-// remove parameters from URL
-url = url.substring(0, (url.indexOf("?") == -1) ? url.length : url.indexOf("?"));
 
-// select file name
-url = url.substr(url.lastIndexOf("/") + 1);
-
-// If file name not avilable
-if(url == ''){
-url = 'index.html';
-}if(url == 'solution.html' || url == 'service.html' || url == 'product.html')
-url='#';
-alert(url);
-
-// Loop all menu items
-$('#navbarResponsive li').each(function(){
-
- // select href
- var href = $(this).find('a').attr('href');
-console.log(href);
- // Check filename
- if(url == href){
-    
-  // Add active class
-  $(this).addClass('current');
- }
-});
-});
+                $(this).addClass('current');
+            }
+        });
+    });
 </script>
