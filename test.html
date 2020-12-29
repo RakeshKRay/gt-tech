@@ -31,14 +31,119 @@
 
     <section id="solution" class="topSection">
 
-        <h1 style="text-align: center;" class="mt-5">VAR &amp; Solution Implementation</h1>
-
+        <h1 style="text-align: center; font-family: 'Tangerine', cursive;" class="mt-5">VAR &amp; Solution
+            Implementation</h1>
+        <h1 style="text-align: center;" class="font-styleAka">VAR &amp; Solution Implementation</h1>
     </section>
+    <div style="width:200px">
+        <div>
+            This is above the paragraph.
+        </div>
+        <div class="descr">
+            This is my text. It has many lines. This is my text.
+            It has many lines.This is my text. It has many lines.
+            This is my text. It has many lines. This is my text.
+            It has many lines.
+        </div>
+        <div>
+            This is below the paragraph.
+        </div>
+    </div>
+
+
+    <style type="text/css">
+        /* div.descr { height:2.2em; overflow:hidden; } */
+        /* div.descr:hover { height:auto; } */
+        .descr {
+            max-height: 420px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .descr .read-more {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            margin: 0;
+            padding: 30px 0;
+
+            /* "transparent" only works here because == rgba(0,0,0,0) */
+            background-image: linear-gradient(to bottom, transparent, black);
+        }
+    </style>
+    <script>var $el, $ps, $up, totalHeight;
+
+        $(".descr .button").click(function() {
+              
+          totalHeight = 0
+        
+          $el = $(this);
+          $p  = $el.parent();
+          $up = $p.parent();
+          $ps = $up.find("div:not('.read-more')");
+          
+          // measure how tall inside should be by adding together heights of all inside paragraphs (except read-more paragraph)
+          $ps.each(function() {
+            totalHeight += $(this).outerHeight();
+          });
+                
+          $up
+            .css({
+              // Set height to prevent instant jumpdown when max height is removed
+              "height": $up.height(),
+              "max-height": 9999
+            })
+            .animate({
+              "height": totalHeight
+            });
+          
+          // fade out read-more
+          $p.fadeOut();
+          
+          // prevent jump-down
+          return false;
+            
+        });</script>
+    <section id="" class="topSection mt-5">
+
+        <h1 style="text-align: center;margin-top: 25px;">Industry</h1>
+        <div class="container-fluid padding font-weight-bold">
+            <div class="row padding">
+                <div class="col-md-3 col-sm-6 col-xs-12  ">
+                    <div class="service-item descr">
+                        <div class="icon"><img class="" src="img/icon/automo.png" height="50" width="50"></div>
+                        <h4 class="text-dark font-weight-bold">Automotive</h4>
+                        <div class="line-dec"></div>
+                        <div class="text-justify text-dark ">
+                            <b>GRAMTARANG Technologies partners with reputed Automotive
+                                Original Equipment Manufacturers and Product Development firms to deliver value added
+                                services in term of Development and Manufacturing solutions.</b>
+                        </div>
+                        <div class="read-more"><a href="#">Continue Reading</a></div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12  ">
+                    <div c lass="service-item descr">
+                        <div class="icon"><img class="" src="img/railway-icon.png" height="50" width="50"></div>
+                        <h4 class="text-dark font-weight-bold">Railways</h4>
+                        <div class="line-dec"></div>
+                        <div class="text-justify text-dark">GRAMATARANG Technologies offers wide spectrum of
+                            Engineering
+                            design & development services in Railway Locomotives, Rail Dynamics & Infrastructure. </div>
+                        <div class="read-more"><a href="#">Continue Reading</a></div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
     <section class="oddSection">
         <div class="row bg-light">
             <div class="col-sm-4 offset-sm-1">
                 <div class="mt-5 text-center">
-                    <h5 class="animated bounceInLeft" style="animation-delay: 0.8s">Geovia</h5>
+                    <h5 class="animated bounceInLeft font-style" style="animation-delay: 0.8s">Geovia</h5>
                 </div>
             </div>
             <div class="col-sm-4 offset-sm-2">
@@ -97,7 +202,7 @@
                 </div>
             </div>
             <div class="col-sm-4 offset-sm-2">
-                <p class="animated bounceInRight" style="animation-delay: 1.0s"><span><i
+                <p class="animated bounceInRight" style="animation-delay: 1.0s; "><span><i
                             class="far fa-check-circle"></i></span>3D Experience Smart City Solution implementation</p>
                 <p class="animated bounceInRight" style="animation-delay: 1.01s"><span><i
                             class="far fa-check-circle"></i></span>AEC for BIM solution Implementation</p>
@@ -469,6 +574,51 @@
         width: 100%;
         overflow: hidden;
     }
+
+    @font-face {
+        font-family: 'helloOlivia';
+        src: url('font/HelloOlivia.otf');
+        /* IE9 Compat Modes */
+        src: url('font/HelloOlivia.otf?#iefix') format('embedded-opentype'),
+            /* IE6-IE8 */
+            url('font/HelloOlivia.ttf') format('truetype');
+        /* Safari, Android, iOS */
+
+    }
+
+    @font-face {
+        font-family: 'helloOliviaIta';
+        src: url('font/HelloOliviaItalic.otf');
+        /* IE9 Compat Modes */
+        src: url('font/HelloOliviaItalic.otf') format('embedded-opentype'),
+            /* IE6-IE8 */
+            url('font/HelloOliviaItalic.ttf') format('truetype');
+        /* Safari, Android, iOS */
+
+    }
+
+    @font-face {
+        font-family: 'akayla';
+        src: url('font/akayla.ttf');
+        /* IE9 Compat Modes */
+        src: url('font/akayla.ttf') format('truetype');
+        /* Safari, Android, iOS */
+
+    }
+
+    .font-style {
+        font-family: helloOlivia;
+    }
+
+    .font-styleIta {
+        font-family: helloOliviaIta;
+    }
+
+    .font-styleAka {
+        font-family: akayla;
+    }
 </style>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
 
 </html>
