@@ -1,72 +1,100 @@
+<div class="header">
+  <nav
+    class="navbar navbar-expand-md navbar-light nav-bg-light position-sticky"
+  >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"
+        ><img src="img/logo1.png" width="210" height="64"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarResponsive"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item align-self-center">
+            <a class="nav-link nav-color" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-color" href="company.html">COMPANY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-color" href="industry.html">INDUSTRY</a>
+          </li>
 
-    <div class="header">
-        <nav class="navbar navbar-expand-md navbar-light nav-bg-light position-sticky ">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="img/logo2.png" width="210" height="64"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item align-self-center">
-                            <a class="nav-link nav-color" href="index.html">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-color" href="company.html">COMPANY</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-color" href="industry.html">INDUSTRY</a>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link nav-color dropdown-toggle" href="#" id="navbardrop" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                WE OFFER
-                            </a>
-                            <div class="dropdown-bg dropdown-menu" aria-labelledby="navbardrop">
-                                <a class="dropdown-item nav-color" href="solution.html">SOLUTIONS</a>
-                                <a class="dropdown-item nav-color" href="service.html">SERVICES</a>
-                                <a class="dropdown-item nav-color" href="product.html">PRODUCTS</a>
-                            </div>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link nav-color" href="gallery.html">GALLERY</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-color" href="blog.html">BLOG</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-color" href="career.html">CAREER</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-color" href="contact.html">CONTACT</a>
-                        </li>
-                    </ul>
-                </div>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link nav-color dropdown-toggle"
+              href="#"
+              id="navbardrop"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              WE OFFER
+            </a>
+            <div class="dropdown-bg dropdown-menu" aria-labelledby="navbardrop">
+              <a class="dropdown-item nav-color" href="solution.html"
+                >SOLUTIONS</a
+              >
+              <a class="dropdown-item nav-color" href="service.html"
+                >SERVICES</a
+              >
+              <a class="dropdown-item nav-color" href="product.html"
+                >PRODUCTS</a
+              >
             </div>
-        </nav>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link nav-color" href="gallery.html">GALLERY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-color" href="blog.html">BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-color" href="career.html">CAREER</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-color" href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
+</div>
 
 <script>
-    $(document).ready(function () {
-
-        var url = window.location.href;
-        url = url.substring(0, (url.indexOf("#") == -1) ? url.length : url.indexOf("#"));
-        url = url.substring(0, (url.indexOf("?") == -1) ? url.length : url.indexOf("?"));
-        url = url.substr(url.lastIndexOf("/") + 1);
-        if (url == '') {
-            url = 'index.html';
-        } if (url == 'solution.html' || url == 'service.html' || url == 'product.html')
-            url = '#';
-        $('#navbarResponsive li').each(function () {
-
-            var href = $(this).find('a').attr('href');
-            if (url == href) {
-
-
-                $(this).addClass('current');
-            }
-        });
+  $(document).ready(function () {
+    var url = window.location.href;
+    url = url.substring(
+      0,
+      url.indexOf("#") == -1 ? url.length : url.indexOf("#")
+    );
+    url = url.substring(
+      0,
+      url.indexOf("?") == -1 ? url.length : url.indexOf("?")
+    );
+    url = url.substr(url.lastIndexOf("/") + 1);
+    if (url == "") {
+      url = "index.html";
+    }
+    if (
+      url == "solution.html" ||
+      url == "service.html" ||
+      url == "product.html"
+    )
+      url = "#";
+    $("#navbarResponsive li").each(function () {
+      var href = $(this).find("a").attr("href");
+      if (url == href) {
+        $(this).addClass("current");
+      }
     });
+  });
 </script>
