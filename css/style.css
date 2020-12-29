@@ -6,16 +6,18 @@ body {
     width: 100%;
     font-family: 'Merriweather', serif;
     color: #222;
-    background-image: url('../img/bg.jpeg');
-    background-repeat: no-repeat;
+    background: url('../img/bg.jpeg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
 }
-#image.img{
+
+#image.img {
     height: 100px;
     width: 100px;
 }
+
 section {
     padding-top: 1.0rem;
     margin-left: 2rem;
@@ -31,14 +33,18 @@ section {
 
 section.oddSection {
     margin-left: 0rem;
-    margin-right: -1rem;
+    margin-right: 0rem;
     background-color: #F8F6F3;
 }
-.footer{
+
+.footer {
+    bottom: 0;
     background-color: #3f3f3f;
     color: #ffffff;
     padding-top: 0rem;
+    overflow: hidden;
 }
+
 .topSection {
     padding-top: 6.5rem;
 }
@@ -61,28 +67,31 @@ section.oddSection {
     padding: .8rem;
     background: -webkit-linear-gradient(left, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 20%, rgb(125, 185, 232) 20%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgb(237, 205, 31) 0%, rgb(237, 205, 31) 250px,#3f3f3f 250px);
+    background: linear-gradient(to right, rgb(237, 205, 31) 0%, rgb(237, 205, 31) 250px, #3f3f3f 250px);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#edcd1f', endColorstr='#7db9e8', GradientType=1);
     /* IE6-9 */
 
 }
 
-.nav-item:hover{
+.nav-item:hover {
     background-color: rgba(227, 243, 9, 0.411);
     border-radius: 23px;
 }
-.current{
+
+.current {
     background-color: rgba(227, 243, 9, 0.411);
-    border-radius:25px;
+    border-radius: 25px;
 }
-.nav-item a{
+
+.nav-item a {
     color: aquamarine;
     display: inline-block;
     padding: .5em .75em;
     border-radius: 23px;
     text-decoration: none;
 }
+
 .navbar-nav li {
     padding-right: 10px;
     padding-left: 10px;
@@ -99,10 +108,12 @@ section.oddSection {
 .nav-bg-light {
     background-color: #C6C6C6 !important;
 }
+
 .dropdown:hover .dropdown-menu {
     display: block;
-    margin-top: 0; 
- }
+    margin-top: 0;
+}
+
 .dropdown-item:hover,
 .dropdown-item:focus {
     color: #000 !important;
@@ -112,7 +123,7 @@ section.oddSection {
 
 .dropdown-bg {
     background-color: #3f3f3f !important;
-    border-radius:25px;
+    border-radius: 25px;
 }
 
 .carousel-inner img {
@@ -326,10 +337,12 @@ hr.light-100 {
     margin-top: .8rem;
     margin-bottom: 1rem;
 }
-.icon img{
+
+.icon img {
     height: 50px;
     width: 50px;
 }
+
 /*---Media Queries --*/
 @media (max-width: 992px) {
     .social a {
@@ -606,26 +619,27 @@ button:active {
         margin-left: 20px
     }
 }
-.roundedCorner
-{
-  width:90%;height:90%;
-  border: solid 1px #555;
-  background-color: #eed;
-  box-shadow: 10px -10px 5px  rgba(0,0,0,0.6);
-  -moz-box-shadow: 10px -10px 5px  rgba(0,0,0,0.6);
-  -webkit-box-shadow: 10px -10px 5px  rgba(0,0,0,0.6);
-  -o-box-shadow: 10px -10px 5px  rgba(0,0,0,0.6);
-  border-radius:25px;
-}
-.circle
-{
-  width:250px;height:250px;
-  border: solid 1px #555;
-  background-color: rgb(189, 189, 15);
-  box-shadow: 20px -20px  rgba(0,0,0,0.6);
-  -moz-box-shadow: 20px -20px  rgba(0,0,0,0.6);
-  -webkit-box-shadow: 20px -20px  rgba(0,0,0,0.6);
-  -o-box-shadow: 20px -20px  rgba(0,0,0,0.6);
-  border-radius:100px;
+
+.roundedCorner {
+    width: 90%;
+    height: 90%;
+    border: solid 1px #555;
+    background-color: #eed;
+    box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.6);
+    border-radius: 25px;
 }
 
+.circle {
+    width: 250px;
+    height: 250px;
+    border: solid 1px #555;
+    background-color: rgb(189, 189, 15);
+    box-shadow: 20px -20px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 20px -20px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 20px -20px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 20px -20px rgba(0, 0, 0, 0.6);
+    border-radius: 100px;
+}
