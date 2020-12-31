@@ -16,7 +16,7 @@
     <script src="js/bootstrap.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <link href="css/style.css" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
     <script>
         $(function () {
             $("#includeFooter").load("footer.html");
@@ -28,7 +28,118 @@
 <body style="font-family: 'Nunito', sans-serif;">
     <!-- Navigation -->
     <div id="includeHeader"></div>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@699;700&display=swap");
+:root {
+  --lower: 100;
+  --upper: 2100;
+}
 
+        .gtHead {
+             font-family: 'Roboto Mono', monospace;
+  font-size: 3rem;
+  text-align: center;
+  
+  font-variation-settings: 'wght' var(--lower);
+        }
+
+        .gtHead span {
+            -webkit-animation: rise 52.25s infinite ease-in-out;
+            animation: rise 2.25s infinite ease-in-out;
+            -webkit-animation-delay: calc((var(--index) - 6) * 0.25s);
+            animation-delay: calc((var(--index) - 6) * 0.25s);
+        }
+
+        @-webkit-keyframes rise {
+            50% {
+                font-variation-settings: 'wght'var(--upper);
+            }
+        }
+
+        @keyframes rise {
+            50% {
+                font-variation-settings: 'wght'var(--upper);
+            }
+        }
+    </style>
+    <div class="container-fluid">
+        <div style="padding-top: 8rem; margin-top: 6rem">
+            <h1 class="display-5 text-center gtHead">
+                <span style="--index: 0">G</span>
+                <span style="--index: 1">r</span>
+                <span style="--index: 2">a</span>
+                <span style="--index: 3">m</span>
+                <span style="--index: 4">T</span>
+                <span style="--index: 5">a</span>
+                <span style="--index: 6">r</span>
+                <span style="--index: 7">a</span>
+                <span style="--index: 8">n</span>
+                <span style="--index: 9">g</span>
+                <span style="--index: 10"> </span>
+                <span style="--index: 11">T</span>
+                <span style="--index: 12">e</span>
+                <span style="--index: 13">c</span>
+                <span style="--index: 14">h</span>
+                <span style="--index: 15">n</span>
+                <span style="--index: 16">o</span>
+                <span style="--index: 17">l</span>
+                <span style="--index: 18">o</span>
+                <span style="--index: 19">g</span>
+                <span style="--index: 20">i</span>
+                <span style="--index: 21">e</span>
+                <span style="--index: 22">s</span>
+            </h1>
+            <!-- <h3 class="lead text-center small">
+            With Hands-On Learning Methods And Industry Collaborations
+          </h3> -->
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white">
+        <div class="row">
+            <div class="col-2 text-center">
+                <i class="fas fa-users-cog fa-3x"></i><br />
+                <div class="count">
+                    <h1>12000</h1>
+                    <h1 class="small m-0 p-0">Projects</h1>
+                </div>
+            </div>
+            <div class="col-2 text-center">
+                <i class="fas fa-glass-cheers fa-3x"></i><br />
+                <div class="count">
+                    <h1>12000</h1>
+                </div>
+                <h1 class="lead">Years</h1>
+            </div>
+            <div class="col-2 text-center">
+                <i class="fas fa-award fa-3x"></i><br />
+                <div class="count">
+                    <h1>12000</h1>
+                </div>
+                <h1 class="lead">Awards</h1>
+            </div>
+            <div class="col-2 text-center">
+                <i class="fas fa-users-cog fa-3x"></i><br />
+                <div class="count">
+                    <h1>12000</h1>
+                </div>
+                <h1 class="lead">Achievements</h1>
+            </div>
+            <div class="col-2 text-center">
+                <i class="fas fa-users-cog fa-3x"></i><br />
+                <div class="count">
+                    <h1>12000</h1>
+                </div>
+                <h1 class="lead">Clients</h1>
+            </div>
+            <div class="col-2 text-center">
+                <i class="fas fa-users-cog fa-3x"></i><br />
+                <div class="count">
+                    <h1>12000</h1>
+                </div>
+                <h1 class="lead">Experience</h1>
+            </div>
+        </div>
+    </div>
     <section id="solution" class="topSection">
 
         <h1 style="text-align: center; font-family: 'Tangerine', cursive;" class="mt-5">VAR &amp; Solution
@@ -75,36 +186,36 @@
     </style>
     <script>var $el, $ps, $up, totalHeight;
 
-        $(".descr .button").click(function() {
-              
-          totalHeight = 0
-        
-          $el = $(this);
-          $p  = $el.parent();
-          $up = $p.parent();
-          $ps = $up.find("div:not('.read-more')");
-          
-          // measure how tall inside should be by adding together heights of all inside paragraphs (except read-more paragraph)
-          $ps.each(function() {
-            totalHeight += $(this).outerHeight();
-          });
-                
-          $up
-            .css({
-              // Set height to prevent instant jumpdown when max height is removed
-              "height": $up.height(),
-              "max-height": 9999
-            })
-            .animate({
-              "height": totalHeight
+        $(".descr .button").click(function () {
+
+            totalHeight = 0
+
+            $el = $(this);
+            $p = $el.parent();
+            $up = $p.parent();
+            $ps = $up.find("div:not('.read-more')");
+
+            // measure how tall inside should be by adding together heights of all inside paragraphs (except read-more paragraph)
+            $ps.each(function () {
+                totalHeight += $(this).outerHeight();
             });
-          
-          // fade out read-more
-          $p.fadeOut();
-          
-          // prevent jump-down
-          return false;
-            
+
+            $up
+                .css({
+                    // Set height to prevent instant jumpdown when max height is removed
+                    "height": $up.height(),
+                    "max-height": 9999
+                })
+                .animate({
+                    "height": totalHeight
+                });
+
+            // fade out read-more
+            $p.fadeOut();
+
+            // prevent jump-down
+            return false;
+
         });</script>
     <section id="" class="topSection mt-5">
 
