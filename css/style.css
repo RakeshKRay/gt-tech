@@ -14,13 +14,12 @@ body {
   background-size: cover;
 }
 .headingofpage {
-  font-family: 'Cookie', cursive;
+  font-family: "Cookie", cursive;
   font-size: 45px;
   font-weight: 200;
-
 }
-.font-cookie{
-  font-family: 'Cookie', cursive;
+.font-cookie {
+  font-family: "Cookie", cursive;
 }
 #image.img {
   height: 100px;
@@ -659,3 +658,46 @@ button:active {
 /* .bgforgreen {
   background-color: #b2fab4;
 } */
+
+.gradanimat {
+  background: linear-gradient(138deg, #2b5651, #bffb6c, #97ffed);
+  background-size: 600% 600%;
+
+  -webkit-animation: gradan 29s ease infinite;
+  -moz-animation: gradan 29s ease infinite;
+  animation: gradan 29s ease infinite;
+}
+
+@-webkit-keyframes gradan {
+  0% {
+    background-position: 18% 0%;
+  }
+  50% {
+    background-position: 83% 100%;
+  }
+  100% {
+    background-position: 18% 0%;
+  }
+}
+@-moz-keyframes gradan {
+  0% {
+    background-position: 18% 0%;
+  }
+  50% {
+    background-position: 83% 100%;
+  }
+  100% {
+    background-position: 18% 0%;
+  }
+}
+@keyframes gradan {
+  0% {
+    background-position: 18% 0%;
+  }
+  50% {
+    background-position: 83% 100%;
+  }
+  100% {
+    background-position: 18% 0%;
+  }
+}
