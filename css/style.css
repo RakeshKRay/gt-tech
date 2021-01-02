@@ -152,7 +152,7 @@ section.oddSection {
 }
 
 .dropdown-bg {
-  /* background-color: #3f3f3f !important; */
+  background-color: rgb(3, 12, 63) !important;
   border-radius: 25px;
 }
 
