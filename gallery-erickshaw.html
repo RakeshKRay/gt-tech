@@ -1,379 +1,193 @@
-<!DOCTYPE >
+<!DOCTYPE>
 <html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GT Tech</title>
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,300&display=swap" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/gallery.js"></script>
+  <!DOCTYPE html>
+  <html>
+
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>GT Tech</title>
     <link rel="stylesheet" href="css/bootstrap.css" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
-    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,300&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="js/gallery.js"></script>
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>GT Tech</title>
-        <link rel="stylesheet" href="css/bootstrap.css" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,300&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-        <script src="js/bootstrap.js"></script>
-        <script
-          src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"
-          integrity="sha512-F5QTlBqZlvuBEs9LQPqc1iZv2UMxcVXezbHzomzS6Df4MZMClge/8+gXrKw2fl5ysdk4rWjR0vKS7NNkfymaBQ=="
-          crossorigin="anonymous"
-        ></script>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css"
-          integrity="sha512-kJ30H6g4NGhWopgdseRb8wTsyllFUYIx3hiUwmGAkgA9B/JbzUBDQVr2VVlWGde6sdBVOG7oU8AL35ORDuMm8g=="
-          crossorigin="anonymous"
-        />
-        <link href="css/style.css" rel="stylesheet" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
-          rel="stylesheet"
-        />
-        <!--<link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css">-->
-        <script>
-          $(function () {
-            $("#includeFooter").load("footer.html");
-            $("#includeHeader").load("header.html");
-          });
-        </script>
-      </head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"
+      integrity="sha512-F5QTlBqZlvuBEs9LQPqc1iZv2UMxcVXezbHzomzS6Df4MZMClge/8+gXrKw2fl5ysdk4rWjR0vKS7NNkfymaBQ=="
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css"
+      integrity="sha512-kJ30H6g4NGhWopgdseRb8wTsyllFUYIx3hiUwmGAkgA9B/JbzUBDQVr2VVlWGde6sdBVOG7oU8AL35ORDuMm8g=="
+      crossorigin="anonymous" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet" />
+    <!--<link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css">-->
+    <script>
+      $(function () {
+        $("#includeFooter").load("footer.html");
+        $("#includeHeader").load("header.html");
+      });
+    </script>
+  </head>
 
-      <body style="font-family: 'Nunito', sans-serif">
-        <!-- Navigation -->
-        <div id="includeHeader"></div>
+<body style="font-family: 'Nunito', sans-serif">
+  <!-- Navigation -->
+  <div id="includeHeader"></div>
 
-        <section id="Gallery" class="topSection">
-          <h1
-            style="text-align: center; margin-top: 25px"
-            class="headingofpage"
-          >
-            Automotive Gallery
-          </h1>
+  <section id="Gallery" class="topSection">
+    <h1 style="text-align: center; margin-top: 25px" class="headingofpage">
+      Automotive Gallery
+    </h1>
 
-          <div class="container">
-            <div class="row">
-              <div class="row">
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                  <a
-                    class="thumbnail"
-                    href="#"
-                    data-image-id=""
-                    data-toggle="modal"
-                    data-title=""
-                    data-image="img/e-rick/Z11.JPG"
-                    data-target="#image-gallery"
-                  >
-                    <img
-                      class="img-thumbnail c-img"
-                      src="img/e-rick/Z11.JPG"
-                      alt="Another alt text"
-                    />
-                  </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                  <a
-                    class="thumbnail"
-                    href="#"
-                    data-image-id=""
-                    data-toggle="modal"
-                    data-title=""
-                    data-image="img/e-rick/E-Auto.png"
-                    data-target="#image-gallery"
-                  >
-                    <img
-                      class="img-thumbnail c-img"
-                      src="img/e-rick/E-Auto.png"
-                      alt="Another alt text"
-                    />
-                  </a>
-                </div>
+    <div class="container">
+      <div class="row">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+              data-image="img/e-rick/Z11.JPG" data-target="#image-gallery">
+              <img class="img-thumbnail c-img" src="img/e-rick/Z11.JPG" alt="Another alt text" />
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+              data-image="img/e-rick/E-Auto.png" data-target="#image-gallery">
+              <img class="img-thumbnail c-img" src="img/e-rick/E-Auto.png" alt="Another alt text" />
+            </a>
+          </div>
 
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                  <a
-                    class="thumbnail"
-                    href="#"
-                    data-image-id=""
-                    data-toggle="modal"
-                    data-title=""
-                    data-image="img/e-rick/Z12.JPG"
-                    data-target="#image-gallery"
-                  >
-                    <img
-                      class="img-thumbnail c-img"
-                      src="img/e-rick/Z12.JPG"
-                      alt="Another alt text"
-                    />
-                  </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                  <a
-                    class="thumbnail"
-                    href="#"
-                    data-image-id=""
-                    data-toggle="modal"
-                    data-title="Test1"
-                    data-image="img/e-rick/E-Auto2.png"
-                    data-target="#image-gallery"
-                  >
-                    <img
-                      class="img-thumbnail c-img"
-                      src="img/e-rick/E-Auto2.png"
-                    />
-                  </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                  <a
-                    class="thumbnail"
-                    href="#"
-                    data-image-id=""
-                    data-toggle="modal"
-                    data-title="Im so nice"
-                    data-image="img/e-rick/Z13.JPG"
-                    data-target="#image-gallery"
-                  >
-                    <img
-                      class="img-thumbnail c-img"
-                      src="img/e-rick/Z13.JPG"
-                      alt="Another alt text"
-                    />
-                  </a>
-                </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+              data-image="img/e-rick/Z12.JPG" data-target="#image-gallery">
+              <img class="img-thumbnail c-img" src="img/e-rick/Z12.JPG" alt="Another alt text" />
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Test1"
+              data-image="img/e-rick/E-Auto2.png" data-target="#image-gallery">
+              <img class="img-thumbnail c-img" src="img/e-rick/E-Auto2.png" />
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
+              data-image="img/e-rick/Z13.JPG" data-target="#image-gallery">
+              <img class="img-thumbnail c-img" src="img/e-rick/Z13.JPG" alt="Another alt text" />
+            </a>
+          </div>
 
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                  <a
-                    class="thumbnail"
-                    href="#"
-                    data-image-id=""
-                    data-toggle="modal"
-                    data-title="Im so nice"
-                    data-image="img/e-rick/E-rickshaw.png"
-                    data-target="#image-gallery"
-                  >
-                    <img
-                      class="img-thumbnail c-img"
-                      src="img/e-rick/E-rickshaw.png"
-                      alt="Another alt text"
-                    />
-                  </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                  <a
-                    class="thumbnail"
-                    href="#"
-                    data-image-id=""
-                    data-toggle="modal"
-                    data-title="Im so nice"
-                    data-image="img/e-rick/Front.PNG"
-                    data-target="#image-gallery"
-                  >
-                    <img
-                      class="img-thumbnail c-img"
-                      src="img/e-rick/Front.PNG"
-                    />
-                  </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                  <a
-                    class="thumbnail"
-                    href="#"
-                    data-image-id=""
-                    data-toggle="modal"
-                    data-title="Im so nice"
-                    data-image="img/img/e-rick/Z14.JPG"
-                    data-target="#image-gallery"
-                  >
-                    <img
-                      class="img-thumbnail c-img"
-                      src="img/e-rick/Z14.JPG"
-                      alt="Another alt text"
-                    />
-                  </a>
-                </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
+              data-image="img/e-rick/E-rickshaw.png" data-target="#image-gallery">
+              <img class="img-thumbnail c-img" src="img/e-rick/E-rickshaw.png" alt="Another alt text" />
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
+              data-image="img/e-rick/Front.PNG" data-target="#image-gallery">
+              <img class="img-thumbnail c-img" src="img/e-rick/Front.PNG" />
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
+              data-image="img/img/e-rick/Z14.JPG" data-target="#image-gallery">
+              <img class="img-thumbnail c-img" src="img/e-rick/Z14.JPG" alt="Another alt text" />
+            </a>
+          </div>
 
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                  <a
-                    class="thumbnail"
-                    href="#"
-                    data-image-id=""
-                    data-toggle="modal"
-                    data-title="Im so nice"
-                    data-image="img/e-rick/E-Auto3.png"
-                    data-target="#image-gallery"
-                  >
-                    <img
-                      class="img-thumbnail c-img"
-                      src="img/e-rick/E-Auto3.png"
-                      alt="Another alt text"
-                    />
-                  </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                  <a
-                    class="thumbnail"
-                    href="#"
-                    data-image-id=""
-                    data-toggle="modal"
-                    data-title="Im so nice"
-                    data-image="img/e-rick/E-Rickshaw2.png"
-                    data-target="#image-gallery"
-                  >
-                    <img
-                      class="img-thumbnail c-img"
-                      src="img/e-rick/E-Rickshaw2.png"
-                      alt="Another alt text"
-                    />
-                  </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                  <a
-                    class="thumbnail"
-                    href="#"
-                    data-image-id=""
-                    data-toggle="modal"
-                    data-title="Im so nice"
-                    data-image="img/e-rick/Right.PNG"
-                    data-target="#image-gallery"
-                  >
-                    <img
-                      class="img-thumbnail c-img"
-                      src="img/e-rick/Right.PNG"
-                      alt="Another alt text"
-                    />
-                  </a>
-                </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
+              data-image="img/e-rick/E-Auto3.png" data-target="#image-gallery">
+              <img class="img-thumbnail c-img" src="img/e-rick/E-Auto3.png" alt="Another alt text" />
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
+              data-image="img/e-rick/E-Rickshaw2.png" data-target="#image-gallery">
+              <img class="img-thumbnail c-img" src="img/e-rick/E-Rickshaw2.png" alt="Another alt text" />
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
+              data-image="img/e-rick/Right.PNG" data-target="#image-gallery">
+              <img class="img-thumbnail c-img" src="img/e-rick/Right.PNG" alt="Another alt text" />
+            </a>
+          </div>
 
-                <!--adding more-->
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                  <a
-                    class="thumbnail"
-                    href="#"
-                    data-image-id=""
-                    data-toggle="modal"
-                    data-title="Im so nice"
-                    data-image="img/e-rick/EV_top.2 (2).jpg"
-                    data-target="#image-gallery"
-                  >
-                    <img
-                      class="img-thumbnail c-img"
-                      src="img/e-rick/EV_top.2 (2).jpg"
-                      alt="Another alt text"
-                    />
-                  </a>
-                </div>
+          <!--adding more-->
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
+              data-image="img/e-rick/EV_top.2 (2).jpg" data-target="#image-gallery">
+              <img class="img-thumbnail c-img" src="img/e-rick/EV_top.2 (2).jpg" alt="Another alt text" />
+            </a>
+          </div>
 
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                  <a
-                    class="thumbnail"
-                    href="#"
-                    data-image-id=""
-                    data-toggle="modal"
-                    data-title="Im so nice"
-                    data-image="img/e-rick/Model.7.jpg"
-                    data-target="#image-gallery"
-                  >
-                    <img
-                      class="img-thumbnail c-img"
-                      src="img/e-rick/Model.7.jpg"
-                      alt="Another alt text"
-                    />
-                  </a>
-                </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
+              data-image="img/e-rick/Model.7.jpg" data-target="#image-gallery">
+              <img class="img-thumbnail c-img" src="img/e-rick/Model.7.jpg" alt="Another alt text" />
+            </a>
+          </div>
+        </div>
+
+        <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="image-gallery-title"></h4>
+                <button type="button" class="close" data-dismiss="modal">
+                  <span aria-hidden="true">×</span><span class="sr-only">Close</span>
+                </button>
               </div>
+              <div class="modal-body">
+                <img id="image-gallery-image" class="img-responsive col-md-12" src="" />
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary float-left" id="show-previous-image">
+                  <i class="fa fa-arrow-left"></i>
+                </button>
 
-              <div
-                class="modal fade"
-                id="image-gallery"
-                tabindex="-1"
-                role="dialog"
-                aria-labelledby="myModalLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h4 class="modal-title" id="image-gallery-title"></h4>
-                      <button type="button" class="close" data-dismiss="modal">
-                        <span aria-hidden="true">×</span
-                        ><span class="sr-only">Close</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <img
-                        id="image-gallery-image"
-                        class="img-responsive col-md-12"
-                        src=""
-                      />
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary float-left"
-                        id="show-previous-image"
-                      >
-                        <i class="fa fa-arrow-left"></i>
-                      </button>
-
-                      <button
-                        type="button"
-                        id="show-next-image"
-                        class="btn btn-secondary float-right"
-                      >
-                        <i class="fa fa-arrow-right"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
+                <button type="button" id="show-next-image" class="btn btn-secondary float-right">
+                  <i class="fa fa-arrow-right"></i>
+                </button>
               </div>
             </div>
           </div>
-        </section>
-        <!--- Footer -->
-        <div
-          class="footer"
-          style="padding-top: 0.5rem"
-          id="includeFooter"
-        ></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--- Footer -->
+  <footer class="footer" style="padding-top: 0.5rem" id="includeFooter"></footer>
 
-        <script>
-          $(document).on("click", '[data-toggle="lightbox"]', function (event) {
-            event.preventDefault();
-          });
+  <script>
+    $(document).on("click", '[data-toggle="lightbox"]', function (event) {
+      event.preventDefault();
+    });
 
-          $("#image-gallery").hide();
-        </script>
-      </body>
-    </html>
-  </head>
+    $("#image-gallery").hide();
+  </script>
+</body>
+
+</html>
+</head>
+
 </html>
