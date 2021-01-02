@@ -13,14 +13,31 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+
+.name-header {
+  font-family: 'Audiowide', cursive;
+  font-size: 50px;
+}
+
+.count-val {
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.count-fig {
+  font-size: 40px
+}
+
 .headingofpage {
   font-family: "Cookie", cursive;
   font-size: 45px;
   font-weight: 200;
 }
+
 .font-cookie {
   font-family: "Cookie", cursive;
 }
+
 #image.img {
   height: 100px;
   width: 100px;
@@ -73,19 +90,15 @@ section.oddSection {
 
 .navbar {
   padding: 0.8rem;
-  background: -webkit-linear-gradient(
-    left,
-    rgb(3, 12, 63) 0%,
-    rgb(3, 12, 63) 20%,
-    rgb(3, 12, 63) 20%
-  );
+  background: -webkit-linear-gradient(left,
+      rgb(3, 12, 63) 0%,
+      rgb(3, 12, 63) 20%,
+      rgb(3, 12, 63) 20%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
-    to right,
-    rgb(3, 12, 63) 0%,
-    rgb(3, 12, 63) 250px,
-    rgb(3, 12, 63) 250px
-  );
+  background: linear-gradient(to right,
+      rgb(3, 12, 63) 0%,
+      rgb(3, 12, 63) 250px,
+      rgb(3, 12, 63) 250px);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#edcd1f', endColorstr='#7db9e8', GradientType=1);
   /* IE6-9 */
@@ -133,13 +146,13 @@ section.oddSection {
 
 .dropdown-item:hover,
 .dropdown-item:focus {
-  color: #000 !important;
+  
   text-decoration: none;
   background-color: rgba(227, 243, 9, 0.411);
 }
 
 .dropdown-bg {
-  background-color: #3f3f3f !important;
+  /* background-color: #3f3f3f !important; */
   border-radius: 25px;
 }
 
@@ -364,9 +377,37 @@ hr.light-100 {
     font-size: 4em;
     padding: 2rem;
   }
+
+  .name-header {
+    font-family: 'Audiowide', cursive;
+    font-size: 45px;
+  }
+
+  .count-val {
+    font-size: large;
+    font-weight: 500;
+  }
+
+  .count-fig {
+    font-size: 35px
+  }
 }
 
 @media (max-width: 768px) {
+  .name-header {
+    font-family: 'Audiowide', cursive;
+    font-size: 37px;
+  }
+
+  .count-val {
+    font-size: medium;
+    font-weight: 400;
+  }
+
+  .count-fig {
+    font-size: 30px
+  }
+
   .social a {
     font-size: 4em;
     padding: 2rem;
@@ -406,25 +447,39 @@ hr.light-100 {
   }
 
   .nav-color {
-    color: #000 !important;
+    color: #fff !important;
   }
 
   .dropdown-bg {
-    background-color: #edcd1f !important;
+    background-color: rgb(3, 12, 63) !important;
   }
 
   .dropdown-item:hover,
   .dropdown-item:focus {
-    color: #000 !important;
+    
     text-decoration: none;
-    background-color: #ee1;
+    background-color: rgba(227, 243, 9, 0.411);
   }
 }
 
 @media (max-width: 576px) {
+  .name-header {
+    font-family: 'Audiowide', cursive;
+    font-size: 25px;
+  }
+
+  .count-val {
+    font-size: small;
+    font-weight: 300;
+  }
+
   .social a {
     font-size: 2.5em;
     padding: 1.2rem;
+  }
+
+  .count-fig {
+    font-size: 25px
   }
 
   .carousel-caption {
@@ -470,7 +525,23 @@ hr.light-100 {
   }
 
   .nav-color {
-    color: #000 !important;
+    color: #fff !important;
+  }
+}
+
+@media (max-width: 490px) {
+  .name-header {
+    font-family: 'Audiowide', cursive;
+    font-size: 25px;
+  }
+
+  .count-val {
+    font-size: xx-small;
+    font-weight: 300;
+  }
+
+  .count-fig {
+    font-size: 20px
   }
 }
 
@@ -672,31 +743,39 @@ button:active {
   0% {
     background-position: 18% 0%;
   }
+
   50% {
     background-position: 83% 100%;
   }
+
   100% {
     background-position: 18% 0%;
   }
 }
+
 @-moz-keyframes gradan {
   0% {
     background-position: 18% 0%;
   }
+
   50% {
     background-position: 83% 100%;
   }
+
   100% {
     background-position: 18% 0%;
   }
 }
+
 @keyframes gradan {
   0% {
     background-position: 18% 0%;
   }
+
   50% {
     background-position: 83% 100%;
   }
+
   100% {
     background-position: 18% 0%;
   }
