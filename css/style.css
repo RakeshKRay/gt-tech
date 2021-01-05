@@ -7,11 +7,11 @@ body {
   /* font-family: "Merriweather", serif; */
   font-family: "Roboto";
   color: #222;
-  background: url("../img/bg.jpeg") no-repeat center center fixed;
+  /* background: url("../img/bg.jpeg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .name-header {
@@ -32,6 +32,16 @@ body {
   font-family: "Cookie", cursive;
   font-size: 45px;
   font-weight: 200;
+  color: rgb(3, 12, 63);
+}
+
+.pageHeading {
+  font-family: "Cookie", cursive;
+  font-size: 55px;
+  font-weight: 200;
+  text-align: center;
+  padding-top: 2rem;
+  color: rgb(3, 12, 63);
 }
 
 .font-cookie {
@@ -68,6 +78,7 @@ section.oddSection {
   color: #ffffff;
   padding-top: 0rem;
   overflow: hidden;
+  
 }
 
 .topSection {
@@ -88,6 +99,7 @@ section.oddSection {
   line-height: 30px;
 }
 
+/* navbar css */
 .navbar {
   padding: 0.8rem;
   background: -webkit-linear-gradient(left,
@@ -146,7 +158,7 @@ section.oddSection {
 
 .dropdown-item:hover,
 .dropdown-item:focus {
-  
+
   text-decoration: none;
   background-color: rgba(227, 243, 9, 0.411);
 }
@@ -154,6 +166,21 @@ section.oddSection {
 .dropdown-bg {
   background-color: rgb(3, 12, 63) !important;
   border-radius: 25px;
+}
+
+.cd-title {
+  margin-left: 20px;;
+  margin-top: 219px;
+  margin-bottom: 16px;
+}
+
+.cd-industry{
+  height: 370px;
+  max-width: 370px;
+  transition: color .3s ease;
+  border-radius: 15px 15px 16px 16px;
+  padding: 31px 32px 29px;
+    width: 100%;
 }
 
 .carousel-inner img {
@@ -243,6 +270,15 @@ tr:nth-child(odd) {
 }
 
 .padding {
+  padding-bottom: 2rem;
+}
+
+.padding-lr {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.padding-tb {
+  padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
@@ -394,6 +430,15 @@ hr.light-100 {
 }
 
 @media (max-width: 768px) {
+  .pageHeading {
+    font-family: "Cookie", cursive;
+    font-size: 45px;
+    font-weight: 200;
+    text-align: center;
+    padding-top: 1.8rem;
+    color: rgb(3, 12, 63);
+  }
+
   .name-header {
     font-family: 'Audiowide', cursive;
     font-size: 37px;
@@ -456,7 +501,7 @@ hr.light-100 {
 
   .dropdown-item:hover,
   .dropdown-item:focus {
-    
+
     text-decoration: none;
     background-color: rgba(227, 243, 9, 0.411);
   }
@@ -466,6 +511,15 @@ hr.light-100 {
   .name-header {
     font-family: 'Audiowide', cursive;
     font-size: 25px;
+  }
+
+  .pageHeading {
+    font-family: "Cookie", cursive;
+    font-size: 40px;
+    font-weight: 200;
+    text-align: center;
+    padding-top: 1.8rem;
+    color: rgb(3, 12, 63);
   }
 
   .count-val {
@@ -527,12 +581,25 @@ hr.light-100 {
   .nav-color {
     color: #fff !important;
   }
+
+  .footer-txt {
+    font-size: 11px;
+  }
 }
 
 @media (max-width: 490px) {
   .name-header {
     font-family: 'Audiowide', cursive;
     font-size: 25px;
+  }
+
+  .pageHeading {
+    font-family: "Cookie", cursive;
+    font-size: 35px;
+    font-weight: 1500;
+    text-align: center;
+    padding-top: 1.5rem;
+    color: rgb(3, 12, 63);
   }
 
   .count-val {
