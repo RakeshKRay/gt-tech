@@ -74,10 +74,24 @@
   </section>
   <style>
     section.ship-banner {
+      position: relative;
       margin-left: 0rem;
       margin-right: 0rem;
       background-image: url(https://www.wallpapertip.com/wmimgs/176-1765212_dual-screen-png-star-wars-aerospace-engineering.png);
       background-size: cover;
+    }
+    section.ship-banner::before {
+      background-image: linear-gradient(to left, rgba(145, 141, 141, 0) 0%, rgb(209, 200, 200) 100%);
+    background-image: -moz-linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background-image: -ms-linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background-image: -o-linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background-image: -webkit-linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    content:"\00a0";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
     }
 
     .banner-shadow {
