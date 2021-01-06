@@ -15,7 +15,7 @@ body {
 }
 
 .name-header {
-  font-family: 'Audiowide', cursive;
+  font-family: "Audiowide", cursive;
   font-size: 50px;
 }
 
@@ -25,7 +25,7 @@ body {
 }
 
 .count-fig {
-  font-size: 40px
+  font-size: 40px;
 }
 
 .headingofpage {
@@ -78,7 +78,6 @@ section.oddSection {
   color: #ffffff;
   padding-top: 0rem;
   overflow: hidden;
-  
 }
 
 .topSection {
@@ -102,15 +101,19 @@ section.oddSection {
 /* navbar css */
 .navbar {
   padding: 0.8rem;
-  background: -webkit-linear-gradient(left,
-      rgb(3, 12, 63) 0%,
-      rgb(3, 12, 63) 20%,
-      rgb(3, 12, 63) 20%);
+  background: -webkit-linear-gradient(
+    left,
+    rgb(3, 12, 63) 0%,
+    rgb(3, 12, 63) 20%,
+    rgb(3, 12, 63) 20%
+  );
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right,
-      rgb(3, 12, 63) 0%,
-      rgb(3, 12, 63) 250px,
-      rgb(3, 12, 63) 250px);
+  background: linear-gradient(
+    to right,
+    rgb(3, 12, 63) 0%,
+    rgb(3, 12, 63) 250px,
+    rgb(3, 12, 63) 250px
+  );
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#edcd1f', endColorstr='#7db9e8', GradientType=1);
   /* IE6-9 */
@@ -158,7 +161,6 @@ section.oddSection {
 
 .dropdown-item:hover,
 .dropdown-item:focus {
-
   text-decoration: none;
   background-color: rgba(227, 243, 9, 0.411);
 }
@@ -169,18 +171,18 @@ section.oddSection {
 }
 
 .cd-title {
-  margin-left: 20px;;
+  margin-left: 20px;
   margin-top: 219px;
   margin-bottom: 16px;
 }
 
-.cd-industry{
+.cd-industry {
   height: 370px;
   max-width: 370px;
-  transition: color .3s ease;
+  transition: color 0.3s ease;
   border-radius: 15px 15px 16px 16px;
   padding: 31px 32px 29px;
-    width: 100%;
+  width: 100%;
 }
 
 .carousel-inner img {
@@ -415,7 +417,7 @@ hr.light-100 {
   }
 
   .name-header {
-    font-family: 'Audiowide', cursive;
+    font-family: "Audiowide", cursive;
     font-size: 45px;
   }
 
@@ -425,7 +427,7 @@ hr.light-100 {
   }
 
   .count-fig {
-    font-size: 35px
+    font-size: 35px;
   }
 }
 
@@ -440,7 +442,7 @@ hr.light-100 {
   }
 
   .name-header {
-    font-family: 'Audiowide', cursive;
+    font-family: "Audiowide", cursive;
     font-size: 37px;
   }
 
@@ -450,7 +452,7 @@ hr.light-100 {
   }
 
   .count-fig {
-    font-size: 30px
+    font-size: 30px;
   }
 
   .social a {
@@ -501,7 +503,6 @@ hr.light-100 {
 
   .dropdown-item:hover,
   .dropdown-item:focus {
-
     text-decoration: none;
     background-color: rgba(227, 243, 9, 0.411);
   }
@@ -509,7 +510,7 @@ hr.light-100 {
 
 @media (max-width: 576px) {
   .name-header {
-    font-family: 'Audiowide', cursive;
+    font-family: "Audiowide", cursive;
     font-size: 25px;
   }
 
@@ -533,7 +534,7 @@ hr.light-100 {
   }
 
   .count-fig {
-    font-size: 25px
+    font-size: 25px;
   }
 
   .carousel-caption {
@@ -589,7 +590,7 @@ hr.light-100 {
 
 @media (max-width: 490px) {
   .name-header {
-    font-family: 'Audiowide', cursive;
+    font-family: "Audiowide", cursive;
     font-size: 25px;
   }
 
@@ -608,7 +609,7 @@ hr.light-100 {
   }
 
   .count-fig {
-    font-size: 20px
+    font-size: 20px;
   }
 }
 
@@ -846,4 +847,13 @@ button:active {
   100% {
     background-position: 18% 0%;
   }
+}
+
+.bg-info-blur {
+  background-color: rgba(253, 249, 249, 0.425);
+  backdrop-filter: blur(5px);
+}
+
+.bg-info-blur:hover {
+  box-shadow: 0 12px 12px -6px #0f26a3;
 }

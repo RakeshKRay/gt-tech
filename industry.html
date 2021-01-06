@@ -1,217 +1,310 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GT Tech</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"
+      integrity="sha512-F5QTlBqZlvuBEs9LQPqc1iZv2UMxcVXezbHzomzS6Df4MZMClge/8+gXrKw2fl5ysdk4rWjR0vKS7NNkfymaBQ=="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css"
+      integrity="sha512-kJ30H6g4NGhWopgdseRb8wTsyllFUYIx3hiUwmGAkgA9B/JbzUBDQVr2VVlWGde6sdBVOG7oU8AL35ORDuMm8g=="
+      crossorigin="anonymous"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <script>
+      $(function () {
+        $("#includeFooter").load("footer.html");
+        $("#includeHeader").load("header.html");
+      });
+    </script>
+    <style>
+      .font-heading {
+        font-family: "Marck Script", cursive;
+      }
+    </style>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>GT Tech</title>
-  <link rel="stylesheet" href="css/bootstrap.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,300&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src="js/bootstrap.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"
-    integrity="sha512-F5QTlBqZlvuBEs9LQPqc1iZv2UMxcVXezbHzomzS6Df4MZMClge/8+gXrKw2fl5ysdk4rWjR0vKS7NNkfymaBQ=="
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css"
-    integrity="sha512-kJ30H6g4NGhWopgdseRb8wTsyllFUYIx3hiUwmGAkgA9B/JbzUBDQVr2VVlWGde6sdBVOG7oU8AL35ORDuMm8g=="
-    crossorigin="anonymous" />
-  <link href="css/style.css" rel="stylesheet" />
-  <script>
-    $(function () {
-      $("#includeFooter").load("footer.html");
-      $("#includeHeader").load("header.html");
-    });
-  </script>
-  <style>
-    .font-heading {
-      font-family: "Marck Script", cursive;
-    }
-  </style>
-</head>
+  <body style="background-image: none; font-family: 'Nunito', sans-serif">
+    <!-- Navigation -->
+    <div id="includeHeader"></div>
 
-<body style="background-image: none; font-family: 'Nunito', sans-serif">
-  <!-- Navigation -->
-  <div id="includeHeader"></div>
-
-  <style type="text/css">
-    div.descr {
-      height: 6.2em;
-      overflow: hidden;
-      background-image: linear-gradient(0deg,
+    <style type="text/css">
+      div.descr {
+        height: 6.2em;
+        overflow: hidden;
+        background-image: linear-gradient(
+          0deg,
           rgba(32, 69, 35, 1) 0%,
-          transparent 34%);
-    }
+          transparent 34%
+        );
+      }
 
-    div.descr:hover {
-      height: auto;
-      background-image: none;
-    }
-  </style>
-  <section id="" class="topSection">
-    <h1 class="pageHeading">
-      <u>Industry</u>
-    </h1>
-    <div class="container-fluid padding font-weight-bold">
-      <div class="row padding">
-        <div class="col-lg-4 col-md-6 col-sm-12 ">
-          <a href="industry-automotive.html" target="_self" >
-          <div class="card bg-info text-white cd-industry position-relative">
-            <img src="img/e-rick/Model.7.jpg" class="card-img" alt="Automotive" height="200px">
-            <div class="card-img-overlay ">
-              <h5 class="card-title cd-title">Automotive</h5>
-              <p class="card-text"></p>
-              <p class="card-text"></p>
-            </div>
-          </div>          
-        </a>
+      div.descr:hover {
+        height: auto;
+        background-image: none;
+      }
+    </style>
+    <section id="" class="topSection">
+      <h1 class="pageHeading">
+        <u>Industry</u>
+      </h1>
+      <div class="container-fluid padding font-weight-bold">
+        <div class="row padding">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <a href="industry-automotive.html" target="_self">
+              <div
+                class="card bg-info-blur border-dark text-dark cd-industry position-relative"
+              >
+                <img
+                  src="img/e-rick/Model.7.jpg"
+                  class="card-img"
+                  alt="Automotive"
+                  height="200px"
+                />
+                <div class="card-img-overlay">
+                  <h5 class="card-title cd-title">Automotive</h5>
+                  <p class="card-text"></p>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <a href="industry-railways.html" target="_self">
+              <div class="card bg-info-blur border-dark text-dark cd-industry">
+                <img
+                  src="https://constructionweekonlineindia.storage.googleapis.com/public/images/2019/09/19/Railways-Green-Mission.jpg"
+                  class="card-img"
+                  alt="Railways"
+                />
+                <div class="card-img-overlay">
+                  <h5 class="card-title cd-title">Railways</h5>
+                  <p class="card-text"></p>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <a href="industry-shipbuilding.html" target="_self">
+              <div class="card bg-info-blur border-dark text-dark cd-industry">
+                <img
+                  src="https://cochinshipyard.com/uploads/slider/297cc7e2b9261637b8ef4ecdb10f30de.jpg"
+                  class="card-img"
+                  alt="Ship Building"
+                />
+                <div class="card-img-overlay">
+                  <h5 class="card-title cd-title">Ship Building</h5>
+                  <p class="card-text"></p>
+                  <p class="card-text"></p>
+                </div></div
+            ></a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <a href="industry-aerospace.html" target="_self">
+              <div class="card bg-info text-white cd-industry">
+                <img
+                  src="img/icon/Aerospace.png"
+                  class="card-img"
+                  alt="Aerospace"
+                />
+                <div class="card-img-overlay">
+                  <h5 class="card-title cd-title">Aerospace</h5>
+                  <p class="card-text"></p>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <a href="industry-construction.html" target="_self">
+              <div class="card bg-info text-white cd-industry">
+                <img
+                  src="img/icon/it1.png"
+                  class="card-img"
+                  alt="Construction &amp; Territories"
+                />
+                <div class="card-img-overlay">
+                  <h5 class="card-title cd-title">
+                    Construction &amp; Territories
+                  </h5>
+                  <p class="card-text"></p>
+                  <p class="card-text"></p>
+                </div></div
+            ></a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <a href="industry-equipment.html" target="_self">
+              <div class="card bg-info text-white cd-industry">
+                <img
+                  src="img/icon/industrial.png"
+                  class="card-img"
+                  alt="Industry Equipment"
+                />
+                <div class="card-img-overlay">
+                  <h5 class="card-title cd-title">Industry Equipment</h5>
+                  <p class="card-text"></p>
+                  <p class="card-text"></p>
+                </div></div
+            ></a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <a href="industry-digitalmanu.html" target="_self">
+              <div class="card bg-info text-white cd-industry">
+                <img
+                  src="img/icon/Digital_Manufacturing-512.png"
+                  class="card-img"
+                  alt="Industry Equipment"
+                />
+                <div class="card-img-overlay">
+                  <h5 class="card-title cd-title">Digital Manufacturing</h5>
+                  <p class="card-text"></p>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <a href="industry-smartcity.html" target="_self">
+              <div class="card bg-info text-white cd-industry">
+                <img
+                  src="img/icon/Smart City.png"
+                  class="card-img"
+                  alt="Industry Equipment"
+                />
+                <div class="card-img-overlay">
+                  <h5 class="card-title cd-title">Smart City</h5>
+                  <p class="card-text"></p>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <a href="#" target="_self">
+              <div class="card bg-info text-white cd-industry">
+                <img src="img/icon/mining.png" class="card-img" alt="Mining" />
+                <div class="card-img-overlay">
+                  <h5 class="card-title cd-title">Mining</h5>
+                  <p class="card-text"></p>
+                  <p class="card-text"></p>
+                </div></div
+            ></a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <a href="#" target="_self">
+              <div class="card bg-info text-white cd-industry">
+                <img
+                  src="img/icon/IT.png"
+                  class="card-img"
+                  alt="Information Technology"
+                />
+                <div class="card-img-overlay">
+                  <h5 class="card-title cd-title">Information Technology</h5>
+                  <p class="card-text"></p>
+                  <p class="card-text"></p>
+                </div></div
+            ></a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <a href="#" target="_self">
+              <div class="card bg-info text-white cd-industry">
+                <img
+                  src="img/icon/skill dev.png"
+                  class="card-img"
+                  alt="High End Skill Development"
+                />
+                <div class="card-img-overlay">
+                  <h5 class="card-title cd-title">
+                    High End Skill Development
+                  </h5>
+                  <p class="card-text"></p>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <a href="industry-railways.html" target="_self" >
-          <div class="card bg-info text-white cd-industry">
-            <img src="https://constructionweekonlineindia.storage.googleapis.com/public/images/2019/09/19/Railways-Green-Mission.jpg" class="card-img" alt="Railways">
-            <div class="card-img-overlay">
-              <h5 class="card-title cd-title">Railways</h5>
-              <p class="card-text"></p>
-              <p class="card-text"></p>
-            </div>
-          </div> </a>         
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <a href="industry-shipbuilding.html" target="_self" >
-          <div class="card bg-info text-white cd-industry">
-            <img src="https://cochinshipyard.com/uploads/slider/297cc7e2b9261637b8ef4ecdb10f30de.jpg" class="card-img" alt="Ship Building">
-            <div class="card-img-overlay">
-              <h5 class="card-title cd-title">Ship Building</h5>
-              <p class="card-text"></p>
-              <p class="card-text"></p>
-            </div>
-          </div></a>          
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <a href="industry-aerospace.html" target="_self" >
-          <div class="card bg-info text-white cd-industry">
-            <img src="img/icon/Aerospace.png" class="card-img" alt="Aerospace">
-            <div class="card-img-overlay">
-              <h5 class="card-title cd-title">Aerospace</h5>
-              <p class="card-text"></p>
-              <p class="card-text"></p>
-            </div>
-          </div> </a>         
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <a href="industry-construction.html" target="_self" >
-          <div class="card bg-info text-white cd-industry">
-            <img src="img/icon/it1.png" class="card-img" alt="Construction &amp; Territories">
-            <div class="card-img-overlay">
-              <h5 class="card-title cd-title">Construction &amp; Territories</h5>
-              <p class="card-text"></p>
-              <p class="card-text"></p>
-            </div>
-          </div></a>          
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <a href="#" target="_self" >
-          <div class="card bg-info text-white cd-industry">
-            <img src="img/icon/industrial.png" class="card-img" alt="Industry Equipment">
-            <div class="card-img-overlay">
-              <h5 class="card-title cd-title">Industry Equipment</h5>
-              <p class="card-text"></p>
-              <p class="card-text"></p>
-            </div>
-          </div></a>          
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <a href="#" target="_self" >
-          <div class="card bg-info text-white cd-industry">
-            <img src="img/icon/Digital_Manufacturing-512.png" class="card-img" alt="Industry Equipment">
-            <div class="card-img-overlay">
-              <h5 class="card-title cd-title">Digital Manufacturing</h5>
-              <p class="card-text"></p>
-              <p class="card-text"></p>
-            </div>
-          </div>  </a>        
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <a href="#" target="_self" >
-          <div class="card bg-info text-white cd-industry">
-            <img src="img/icon/Smart City.png" class="card-img" alt="Industry Equipment">
-            <div class="card-img-overlay">
-              <h5 class="card-title cd-title">Smart City</h5>
-              <p class="card-text"></p>
-              <p class="card-text"></p>
-            </div>
-          </div> </a>         
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <a href="#" target="_self" >
-          <div class="card bg-info text-white cd-industry">
-            <img src="img/icon/mining.png" class="card-img" alt="Mining">
-            <div class="card-img-overlay">
-              <h5 class="card-title cd-title">Mining</h5>
-              <p class="card-text"></p>
-              <p class="card-text"></p>
-            </div>
-          </div></a>          
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <a href="#" target="_self" >
-          <div class="card bg-info text-white cd-industry">
-            <img src="img/icon/IT.png" class="card-img" alt="Information Technology">
-            <div class="card-img-overlay">
-              <h5 class="card-title cd-title">Information Technology</h5>
-              <p class="card-text"></p>
-              <p class="card-text"></p>
-            </div>
-          </div></a>          
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <a href="#" target="_self" >
-          <div class="card bg-info text-white cd-industry">
-            <img src="img/icon/skill dev.png" class="card-img" alt="High End Skill Development">
-            <div class="card-img-overlay">
-              <h5 class="card-title cd-title">High End Skill Development</h5>
-              <p class="card-text"></p>
-              <p class="card-text"></p>
-            </div>
-          </div>          </a>
-        </div>
-        
       </div>
-    </div>
-  </section>
-  <section class="oddSection partner">
-    <div class="container-fluid padding">
-      <div class="row welcome text-justify">
-        <div class="col-sm-12">
-          <h2 class="font-weight-bold headingofpage">Industry Partners</h2>
+    </section>
+    <section class="oddSection partner">
+      <div class="container-fluid padding">
+        <div class="row welcome text-justify">
+          <div class="col-sm-12">
+            <h2 class="font-weight-bold headingofpage">Industry Partners</h2>
+          </div>
         </div>
-      </div>
 
-      <div class="container">
-        <div class="row ml-4">
-          <div class="col-sm-3">
-            <img src="img/icon/dss_logo.png" alt="" class="img-fluid" style="height: 100px" width="200px;" />
-          </div>
-          <div class="col-sm-3">
-            <img src="img/general aeronautics.png" alt="" class="img-fluid" style="height: 80px" width="150px;" />
-          </div>
-          <div class="col-sm-3">
-            <img src="img/icon/GT_logo.png" alt="" class="img-fluid" style="height: 100px" width="200px;" />
-          </div>
-          <div class="col-sm-3">
-            <img src="img/icon/cutm_logo.png" alt="" class="img-fluid" style="height: 100px" width="120px;" />
+        <div class="container">
+          <div class="row ml-4">
+            <div class="col-sm-3">
+              <img
+                src="img/icon/dss_logo.png"
+                alt=""
+                class="img-fluid"
+                style="height: 100px"
+                width="200px;"
+              />
+            </div>
+            <div class="col-sm-3">
+              <img
+                src="img/general aeronautics.png"
+                alt=""
+                class="img-fluid"
+                style="height: 80px"
+                width="150px;"
+              />
+            </div>
+            <div class="col-sm-3">
+              <img
+                src="img/icon/GT_logo.png"
+                alt=""
+                class="img-fluid"
+                style="height: 100px"
+                width="200px;"
+              />
+            </div>
+            <div class="col-sm-3">
+              <img
+                src="img/icon/cutm_logo.png"
+                alt=""
+                class="img-fluid"
+                style="height: 100px"
+                width="120px;"
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!--- Footer -->
-  <footer class="footer" style="padding-top: 0.5rem" id="includeFooter"></footer>
-</body>
-
+    </section>
+    <!--- Footer -->
+    <footer
+      class="footer"
+      style="padding-top: 0.5rem"
+      id="includeFooter"
+    ></footer>
+  </body>
 </html>
