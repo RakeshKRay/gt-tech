@@ -30,8 +30,11 @@
       crossorigin="anonymous"
     />
     <link href="css/style.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
+      rel="stylesheet"
+    />
     <script>
       $(function () {
         $("#includeFooter").load("footer.html");
@@ -52,8 +55,10 @@
             <li class="breadcrumb-item active" aria-current="page">Contact</li>
           </ol>
         </nav>
-    </div>
-      <h1 style="text-align: center; margin-top: 25px" class="headingofpage">Contact us</h1>
+      </div>
+      <h1 style="text-align: center; margin-top: 25px" class="headingofpage">
+        Contact us
+      </h1>
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-6">
@@ -93,7 +98,10 @@
             </div>
           </div>
           <div class="col-lg-6">
-            <form method="post" action="thankyou.php">
+            <div>
+              <p id="response"></p>
+            </div>
+            <form id="formofcontact">
               <div class="form-group">
                 <label for="inputAddress">Name</label>
                 <input
@@ -130,7 +138,6 @@
                     style="font-family: arial; cursor: pointer"
                     required
                     placeholder="Your Mobile No Here."
-                    pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
                     title="Enter 10 Digit Phone No "
                   />
                 </div>
@@ -173,7 +180,42 @@
         </div>
       </div>
     </section>
+    <script>
+      $(document).ready(function () {
+        $("#formofcontact").submit(function () {
+          // show that something is loading
+          $("#response").html("<b>Loading response...</b>");
+
+          // Call ajax for pass data to other place
+          $.ajax({
+            type: "POST",
+            url: "contact.php",
+            data: $(this).serialize(), // getting filed value in serialize form
+          })
+            .done(function (data) {
+              // if getting done then call.
+
+              // show the response
+              $("#response").html(data);
+              console.log(data);
+            })
+            .fail(function () {
+              // if fail then getting message
+
+              // just in case posting your form failed
+              alert("Posting failed.");
+            });
+
+          // to prevent refreshing the whole page page
+          return false;
+        });
+      });
+    </script>
     <!--- Footer -->
-    <footer class="footer" style="padding-top: 0.5rem" id="includeFooter"></footer>
+    <footer
+      class="footer"
+      style="padding-top: 0.5rem"
+      id="includeFooter"
+    ></footer>
   </body>
 </html>
