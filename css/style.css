@@ -186,6 +186,10 @@ section.oddSection {
   padding: 31px 32px 29px;
   width: 100%;
 }
+.cd-img-ht{
+  height: 250px;
+  width: 100%;
+}
 
 .carousel-inner img {
   width: 100%;
@@ -872,12 +876,30 @@ button:active {
   }
 }
 
+.list-group-item:hover{
+  background-color: rgba(176, 179, 235, 0.479);
+}
+
 .bg-info-blur {
+  backdrop-filter: blur(5px);
+}
+
+.bg-info-blur:hover  {
+  box-shadow: 0 12px 12px -6px #0f26a3;
+  background-color: rgba(176, 179, 235, 0.479);
+}
+.bg-info-blur:hover + .list-group-item {
+  box-shadow: 0 12px 12px -6px #0f26a3;
+  background-color: rgba(176, 179, 235, 0.479);
+}
+
+
+.bg-info-blur-ind {
   background-color: rgba(216, 187, 187, 0.425);
   backdrop-filter: blur(5px);
 }
 
-.bg-info-blur:hover {
+.bg-info-blur-ind:hover {
   box-shadow: 0 12px 12px -6px #0f26a3;
   background-color: rgba(212, 154, 154, 0.425);
 }
