@@ -172,14 +172,16 @@ section.oddSection {
 
 .cd-title {
   margin-left: 20px;
-  margin-top: 219px;
+  margin-top: 280px;
   margin-bottom: 16px;
 }
-
+.cd-ind-img{
+  height: 260px;
+}
 .cd-industry {
   height: 370px;
   max-width: 370px;
-  transition: color 0.3s ease;
+  transition: color 0.9s ease;
   border-radius: 15px 15px 16px 16px;
   padding: 31px 32px 29px;
   width: 100%;
@@ -283,7 +285,28 @@ tr:nth-child(odd) {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+/* breadcrumb */
+ol.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: white;
+}
 
+ol.breadcrumb li+li::before {
+  content: ">";
+}
+
+ol.breadcrumb li a {
+  color: #01447e;
+  text-decoration: none;
+}
+
+ol.breadcrumb li a:hover {
+
+  color: #e21c90;
+  text-decoration: underline;
+}
+/* end breadcrumb */
 .welcome {
   width: 95%;
   margin: 0 auto;
@@ -850,10 +873,11 @@ button:active {
 }
 
 .bg-info-blur {
-  background-color: rgba(253, 249, 249, 0.425);
+  background-color: rgba(216, 187, 187, 0.425);
   backdrop-filter: blur(5px);
 }
 
 .bg-info-blur:hover {
   box-shadow: 0 12px 12px -6px #0f26a3;
+  background-color: rgba(212, 154, 154, 0.425);
 }
