@@ -69,8 +69,10 @@ section {
 section.oddSection {
   margin-left: 0rem;
   margin-right: 0rem;
+  padding:  0 2rem 0 2rem;
   /* background-color: #f8f6f3; */
 }
+
 
 .footer {
   bottom: 0;
@@ -148,10 +150,6 @@ section.oddSection {
 
 .nav-color {
   color: #fff !important;
-}
-
-.nav-bg-light {
-  background-color: #c6c6c6 !important;
 }
 
 .dropdown:hover .dropdown-menu {

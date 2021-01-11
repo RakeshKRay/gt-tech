@@ -1,17 +1,8 @@
 <div class="header">
-  <nav
-    class="navbar navbar-expand-md navbar-dark nav-bg-light position-sticky"
-  >
+  <nav class="navbar navbar-expand-md navbar-dark position-sticky">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"
-        ><img src="img/logo1.png" width="210" height="64"
-      /></a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarResponsive"
-      >
+      <a class="navbar-brand" href="#"><img src="img/logo1.png" width="210" height="64" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -27,28 +18,28 @@
           </li>
 
           <li class="nav-item dropdown ">
-            <a
-              class="nav-link nav-color dropdown-toggle"
-              href="#"
-              id="navbardrop"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
+            <a class="nav-link nav-color dropdown-toggle" href="#" id="navbardrop" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
               WE OFFER
             </a>
-            <div class="dropdown-bg dropdown-menu" aria-labelledby="navbardrop">
-              <a class="dropdown-item nav-color" href="solution.html"
-                >SOLUTIONS</a
-              >
-              <a class="dropdown-item nav-color" href="service.html"
-                >SERVICES</a
-              >
-              <a class="dropdown-item nav-color" href="product.html"
-                >PRODUCTS</a
-              >
-            </div>
+            <ul class="dropdown-bg dropdown-menu" aria-labelledby="navbardrop">
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle nav-color" href="solution.html">SOLUTIONS</a>
+                <ul class="dropdown-menu dropdown-bg">
+                  <li>
+                    <a class="dropdown-item nav-color" href="service.html">SAAS</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a class="dropdown-item nav-color" href="service.html">SERVICES</a></li>
+              <li><a class="dropdown-item nav-color" href="product.html">PRODUCTS</a></li>
+              </ul>
+            <!-- <div class="dropdown-bg dropdown-menu" aria-labelledby="navbardrop">
+              <a class="dropdown-item nav-color" href="solution.html">SOLUTIONS</a>
+              
+              <a class="dropdown-item nav-color" href="service.html">SERVICES</a>
+              <a class="dropdown-item nav-color" href="product.html">PRODUCTS</a>
+            </div> -->
           </li>
 
           <li class="nav-item">
@@ -68,8 +59,27 @@
     </div>
   </nav>
 </div>
+<style>
+  .dropdown-submenu {
+  position: relative;
+}
 
+.dropdown-submenu a::after {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 6px;
+  top: .8em;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: .1rem;
+  margin-right: .1rem;
+}
+</style>
 <script>
+// for identify current page
   $(document).ready(function () {
     var url = window.location.href;
     url = url.substring(
@@ -97,4 +107,20 @@
       }
     });
   });
+
+//   $('.dropdown-menu a.dropdown-toggle').on('mousedown', function(e) {
+//   if (!$(this).next().hasClass('show')) {
+//     $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+//   }
+//   var $subMenu = $(this).next(".dropdown-menu");
+//   $subMenu.toggleClass('show');
+
+
+//   $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+//     $('.dropdown-submenu.show').removeClass("show");
+//   });
+
+
+//   return false;
+// });
 </script>
