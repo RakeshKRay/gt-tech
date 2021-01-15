@@ -32,7 +32,7 @@ body {
   font-family: "Cookie", cursive;
   font-size: 45px;
   font-weight: 200;
-  color: rgb(3, 12, 63);
+  color: rgb(3, 3, 3);
 }
 
 .pageHeading {
@@ -83,38 +83,26 @@ section.oddSection {
 }
 
 .topSection {
-  padding-top: 6.5rem;
+  padding-top: 6.3rem;
 }
 
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 0;
-  z-index: 10000;
-  transition: all 0.2s ease-in-out;
-  height: 80px;
-  background-color: #d3d3d3;
-  text-align: center;
-  line-height: 30px;
-}
+
 
 /* navbar css */
 .navbar {
   padding: 0.8rem;
   background: -webkit-linear-gradient(
     left,
-    rgb(3, 12, 63) 0%,
-    rgb(3, 12, 63) 20%,
-    rgb(3, 12, 63) 20%
+    rgb(0, 0, 0) 0%,
+    rgb(0, 0, 0) 20%,
+    rgb(2, 2, 2) 20%
   );
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(
     to right,
-    rgb(3, 12, 63) 0%,
-    rgb(3, 12, 63) 250px,
-    rgb(3, 12, 63) 250px
+    rgb(0, 0, 0) 0%,
+    rgb(0, 0, 0) 250px,
+    rgb(0, 0, 0) 250px
   );
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#edcd1f', endColorstr='#7db9e8', GradientType=1);
@@ -325,17 +313,29 @@ ol.breadcrumb li a:hover {
 .welcome h2 {
   text-align: center !important;
 }
-
-.header-top {
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  z-index: 10000;
+  transition: all 0.2s ease-in-out;
+  height: 80px;
+  background-color: #d3d3d3;
+  text-align: center;
+  line-height: 30px;
+}
+header {
   position: relative;
   background-color: black;
-  height: 100vh;
+  height: 75vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
 }
 
-.header-top video {
+header video {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -344,26 +344,15 @@ ol.breadcrumb li a:hover {
   width: auto;
   height: auto;
   z-index: 0;
-
   -ms-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
 
-.header-top .container {
+header .container {
   position: relative;
   z-index: 2;
-}
-
-.header-top .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0.5;
-  z-index: 1;
 }
 
 h1,
