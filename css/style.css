@@ -29,14 +29,14 @@ body {
 }
 
 .headingofpage {
-  font-family: "Cookie", cursive;
+  font-family: "DM Sans", sans-serif;
   font-size: 45px;
   font-weight: 200;
   color: rgb(3, 3, 3);
 }
 
 .pageHeading {
-  font-family: "Cookie", cursive;
+  font-family: "DM Sans", sans-serif;
   font-size: 55px;
   font-weight: 200;
   text-align: center;
@@ -45,7 +45,11 @@ body {
 }
 
 .font-cookie {
-  font-family: "Cookie", cursive;
+  font-family: "DM Sans", sans-serif;
+  font-size: 2.3rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 0px;
 }
 
 #image.img {
@@ -83,7 +87,7 @@ section.oddSection {
 }
 
 .topSection {
-  padding-top: 6.3rem;
+  padding-top: 4.3rem;
 }
 
 
@@ -313,7 +317,7 @@ ol.breadcrumb li a:hover {
 .welcome h2 {
   text-align: center !important;
 }
-.header {
+/* .header {
   position: fixed;
   top: 0;
   left: 0;
@@ -325,7 +329,7 @@ ol.breadcrumb li a:hover {
   background-color: #d3d3d3;
   text-align: center;
   line-height: 30px;
-}
+} */
 header {
   position: relative;
   background-color: black;
@@ -354,7 +358,14 @@ header .container {
   position: relative;
   z-index: 2;
 }
-
+.gal-title{
+  color: #ffeb00;
+  font-size: 35px;
+}
+.gal-btn{
+  background: none;
+  font-size: 15px;
+}
 h1,
 h2,
 h3,
@@ -520,6 +531,14 @@ hr.light-100 {
     text-decoration: none;
     background-color: rgba(227, 243, 9, 0.411);
   }
+  .gal-title{
+    color: #ffeb00;
+    font-size: 31px;
+  }
+  .gal-btn{
+    background: none;
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -600,6 +619,14 @@ hr.light-100 {
   .footer-txt {
     font-size: 11px;
   }
+  .gal-title{
+    color: #ffeb00;
+    font-size: 25px;
+  }
+  .gal-btn{
+    background: none;
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 490px) {
@@ -624,6 +651,14 @@ hr.light-100 {
 
   .count-fig {
     font-size: 20px;
+  }
+  .gal-title{
+    color: #ff002b;
+    font-size: 15px;
+  }
+  .gal-btn{
+    background: none;
+    font-size: 6px;
   }
 }
 
@@ -735,7 +770,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
 }
 
 .content a {
-  font-size: 15px;
+  /* font-size: 15px; */
   display: block;
   background-color: #ff771d;
   text-align: center;
@@ -824,7 +859,7 @@ button:active {
 /* .bgforgreen {
   background-color: #b2fab4;
 } */
-
+/* 
 .gradanimat {
   background: linear-gradient(138deg, #2b5651, #bffb6c, #97ffed);
   background-size: 600% 600%;
@@ -874,7 +909,7 @@ button:active {
   100% {
     background-position: 18% 0%;
   }
-}
+} */
 
 .list-group-item:hover{
   background-color: rgba(176, 179, 235, 0.479);
