@@ -27,7 +27,19 @@ body {
 .count-fig {
   font-size: 40px;
 }
-
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  z-index: 10000;
+  transition: all 0.2s ease-in-out;
+  height: 80px;
+  background-color: #d3d3d3;
+  text-align: center;
+  line-height: 30px;
+}
 .headingofpage {
   font-family: "DM Sans", sans-serif;
   font-size: 45px;
@@ -87,7 +99,7 @@ section.oddSection {
 }
 
 .topSection {
-  padding-top: 4.3rem;
+  padding-top: 4.8rem;
 }
 
 
@@ -99,7 +111,7 @@ section.oddSection {
     left,
     rgb(0, 0, 0) 0%,
     rgb(0, 0, 0) 20%,
-    rgb(2, 2, 2) 20%
+    rgb(0, 0, 0) 20%
   );
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(
@@ -114,12 +126,12 @@ section.oddSection {
 }
 
 .nav-item:hover {
-  background-color: rgba(227, 243, 9, 0.411);
+  background-color:rgb(197, 197, 197) !important;
   border-radius: 23px;
 }
 
 .current {
-  background-color: rgba(227, 243, 9, 0.411);
+  background-color:rgb(122, 122, 122) !important;
   border-radius: 25px;
 }
 
@@ -152,11 +164,11 @@ section.oddSection {
 .dropdown-item:hover,
 .dropdown-item:focus {
   text-decoration: none;
-  background-color: rgba(227, 243, 9, 0.411);
+  background-color:rgb(197, 197, 197) !important;
 }
 
 .dropdown-bg {
-  background-color: rgb(3, 12, 63) !important;
+  background-color: rgb(0, 0, 0) !important;
   border-radius: 25px;
 }
 
@@ -317,23 +329,11 @@ ol.breadcrumb li a:hover {
 .welcome h2 {
   text-align: center !important;
 }
-/* .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 0;
-  z-index: 10000;
-  transition: all 0.2s ease-in-out;
-  height: 80px;
-  background-color: #d3d3d3;
-  text-align: center;
-  line-height: 30px;
-} */
+
 header {
   position: relative;
   background-color: black;
-  height: 75vh;
+  height: 85vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
@@ -454,6 +454,9 @@ hr.light-100 {
   .count-fig {
     font-size: 35px;
   }
+  .nav-link {
+    font-size: 1em !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -515,7 +518,7 @@ hr.light-100 {
   }
 
   .navbar {
-    background: rgb(3, 12, 63) !important;
+    background: rgb(0, 0, 0) !important;
   }
 
   .nav-color {
@@ -523,7 +526,7 @@ hr.light-100 {
   }
 
   .dropdown-bg {
-    background-color: rgb(3, 12, 63) !important;
+    background-color: rgb(0, 0, 0) !important;
   }
 
   .dropdown-item:hover,
@@ -609,7 +612,7 @@ hr.light-100 {
   }
 
   .navbar {
-    background: rgb(3, 12, 63) !important;
+    background: rgb(0, 0, 0) !important;
   }
 
   .nav-color {
