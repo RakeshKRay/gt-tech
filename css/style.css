@@ -335,6 +335,7 @@ ol.breadcrumb li a:hover {
 header {
   position: relative;
   background-color: black;
+  /* height: 40vw; */
   height: 75vh;
   min-height: 25rem;
   width: 100%;
@@ -461,6 +462,10 @@ hr.light-100 {
   .nav-link {
     font-size: 1em !important;
   }
+  header {
+    height: 70vh;
+    min-height: 22rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -545,6 +550,10 @@ hr.light-100 {
   .gal-btn{
     background: none;
     font-size: 13px;
+  }
+  header {
+    height: 65vh;
+    min-height: 19rem;
   }
 }
 
@@ -634,6 +643,10 @@ hr.light-100 {
     background: none;
     font-size: 10px;
   }
+  header {
+    height: 55vh;
+    min-height: 17rem;
+  }
 }
 
 @media (max-width: 490px) {
@@ -666,6 +679,10 @@ hr.light-100 {
   .gal-btn{
     background: none;
     font-size: 6px;
+  }
+  header {
+    height: 50vh;
+    min-height: 15rem;
   }
 }
 
