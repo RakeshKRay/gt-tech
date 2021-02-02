@@ -1,5 +1,12 @@
 <?php
+header("Access-Control-Allow-Origin: *");
+header("Content-Type: application/json; charset=UTF-8");
 
+include_once '../config/database.php';
+include_once '../class/employees.php';
+
+$database = new Database();
+$db = $database->getConnection();
 $name=$_POST["name1"];
 $email=$_POST["email1"];
 $mobile=$_POST["mobile1"];
@@ -29,7 +36,3 @@ $conn->close();
 
 
 // echo "<span class='alert alert-success text-center'>Submitted SuccessFully ✅</span>";
-
-
-
-?>
