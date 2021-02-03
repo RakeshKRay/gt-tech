@@ -188,10 +188,10 @@
         </div>
         <div class="row">
           <div class="col-lg-3 col-md-6 i d-flex justify-content-center">
-            <div class="c text-center">
-              <div class="wrap">
-                <img src="img/ashish.jpg" alt="#" width="270" height="270" class="img-responsive" />
-                <div class="info">
+            <div class="text-center">
+              <div class="card item-card card-block">
+                <img src="img/ashish.jpg" alt="#" width="270" height="270" class="padding img-responsive"/>
+                <div class="info padding">
                   <h4 class="name">Ashish Kumar Modi</h4>
                   <h5 class="position">Project Manager</h5>
                 </div>
@@ -208,10 +208,10 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6 i d-flex justify-content-center">
-            <div class="c text-center">
-              <div class="wrap">
-                <img src="img/dinesh.png" alt="#" width="270" height="270" class="img-responsive" />
-                <div class="info">
+            <div class="text-center">
+              <div class="card">
+                <img src="img/dinesh.jpg" alt="#" width="270" height="270" class="padding img-responsive" />
+                <div class="info padding">
                   <h4 class="name">Dinesh Tej</h4>
                   <h5 class="position">Solution Architect</h5>
                 </div>
@@ -228,10 +228,10 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6 i d-flex justify-content-center">
-            <div class="c text-center">
-              <div class="wrap">
-                <img src="img/empty-photo.png" alt="#" width="270" height="270" class="img-responsive" />
-                <div class="info">
+            <div class="text-center">
+              <div class="card">
+                <img src="img/Sipalin.jpg" alt="#" width="270" height="270" class="padding img-responsive" />
+                <div class="info padding">
                   <h4 class="name">Sipalin Nayak</h4>
                   <h5 class="position">Project Manager</h5>
                 </div>
@@ -248,10 +248,10 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6 i d-flex justify-content-center">
-            <div class="c text-center">
-              <div class="wrap">
-                <img src="img/Madhusudhan.jpg" alt="#" width="270" height="270" class="img-responsive" />
-                <div class="info">
+            <div class="text-center">
+              <div class="card">
+                <img src="img/Madhusudhan.jpg" alt="#" width="270" height="270" class="padding img-responsive" />
+                <div class="info padding">
                   <h4 class="name">Madhusudhan B </h4>
                   <h5 class="position">Project manager</h5>
                 </div>
@@ -305,7 +305,42 @@
     .font-heading {
       font-family: "Pacifico", cursive;
     }
+    .card-title i:hover{
+  transform: scale(1.25) rotate(100deg); 
+  color:#18d4ca;
+  
+}
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+}
+.card-text{
+  height:80px;  
+}
+
+.card::before, .card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform .3s ease-out 0s;
+  background: rgba(255, 255, 255, 0.1);
+  content: '';
+  pointer-events: none;
+}
+.card::before {
+  transform-origin: left top;
+}
+.card::after {
+  transform-origin: right bottom;
+}
+.card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+  transform: scale3d(1, 1, 1);
+}
   </style>
+
 </body>
 
 </html>
