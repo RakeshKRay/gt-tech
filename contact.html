@@ -104,7 +104,7 @@
                   title="Enter 10 Digit Phone No " />
               </div>
             </div>
-            
+
             <div class="form-group">
               <label for="inputZip">Message</label>
               <textarea class="form-control shadow-sm border border-dark" rows="4" id="message" name="message" required
@@ -123,13 +123,21 @@
       $("#formofcontact").submit(function () {
         // show that something is loading
         $("#response").html("<b>Loading response...</b>");
-
+        $name = $('#name1').val();
+        $email = $('#email1').val();
+        $phone = $('#phone').val();
+        $message = $('#message').val();
         // Call ajax for pass data to other place
         $.ajax({
-          type: "POST",
-          url: "contact.php",
-          data: $(this).serialize(), // getting filed value in serialize form
-        })
+            type: "POST",
+            url: "api/createContactUs.php",
+            data: {
+              "name": name,
+              "email": email,
+              "phone": phone,
+              "message": message
+            }, // getting filed value in serialize form
+          })
           .done(function (data) {
             // if getting done then call.
 

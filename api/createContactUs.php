@@ -5,16 +5,15 @@
     header("Access-Control-Max-Age: 3600");
     header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
-    include_once '../config/database.php';
-    include_once '../class/ContactUs.php';
-
+    include_once 'config/database.php';
+    include_once 'model/ContactUs.php';
+    
     $database = new Database();
     $db = $database->getConnection();
 
     $item = new ContactUs($db);
-
     $data = json_decode(file_get_contents("php://input"));
-
+    
     $item->name = $data->name;
     $item->email = $data->email;
     $item->phone = $data->phone;
@@ -22,8 +21,8 @@
     $item->created_date = date('Y-m-d H:i:s');
     
     if($item->createContactUs()){
-        echo 'Contact added successfully.';
+       echo json_encode('Contact added successfully.');
     } else{
-        echo 'Contact could not be added.';
+        echo json_encode('Contact could not be added.');
     }
 ?>

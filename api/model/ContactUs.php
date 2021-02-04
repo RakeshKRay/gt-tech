@@ -51,9 +51,9 @@
             // bind data
             $stmt->bindParam(":name", $this->name);
             $stmt->bindParam(":email", $this->email);
-            $stmt->bindParam(":age", $this->phone);
-            $stmt->bindParam(":designation", $this->message);
-            $stmt->bindParam(":created", $this->created_date);
+            $stmt->bindParam(":phone", $this->phone);
+            $stmt->bindParam(":message", $this->message);
+            $stmt->bindParam(":created_date", $this->created_date);
         
             if($stmt->execute()){
                return true;
