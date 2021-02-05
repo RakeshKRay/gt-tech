@@ -44,23 +44,29 @@ class ApplyJob{
                     email = :email, 
                     phone = :phone, 
                     designation = :designation,
-                    message = :message, 
+                    applyDesc = :applyDesc,
+                    cv = :cv;
                     created_date = :created_date";
     
         $stmt = $this->conn->prepare($sqlQuery);
     
-        // sanitize
-        $this->fname=htmlspecialchars(strip_tags($this->fname));
-        $this->email=htmlspecialchars(strip_tags($this->email));
-        $this->phone=htmlspecialchars(strip_tags($this->phone));
-        $this->message=htmlspecialchars(strip_tags($this->message));
-        $this->created_date=htmlspecialchars(strip_tags($this->created_date));
+        // // sanitize
+        // $this->fname=htmlspecialchars(strip_tags($this->fname));
+        // $this->email=htmlspecialchars(strip_tags($this->email));
+        // $this->phone=htmlspecialchars(strip_tags($this->phone));
+        // $this->message=htmlspecialchars(strip_tags($this->message));
+        // $this->created_date=htmlspecialchars(strip_tags($this->created_date));
     
         // bind data
         $stmt->bindParam(":fname", $this->fname);
+        $stmt->bindParam(":dob", $this->dob);
+        $stmt->bindParam(":experience", $this->experience);
+        $stmt->bindParam(":location", $this->location);
         $stmt->bindParam(":email", $this->email);
         $stmt->bindParam(":phone", $this->phone);
-        $stmt->bindParam(":message", $this->message);
+        $stmt->bindParam(":designation", $this->designation);
+        $stmt->bindParam(":applyDesc", $this->applyDesc);
+        $stmt->bindParam(":cv", $this->cv);
         $stmt->bindParam(":created_date", $this->created_date);
     
         if($stmt->execute()){
@@ -83,10 +89,14 @@ class ApplyJob{
         
         $this->id = $dataRow['id'];
         $this->fname = $dataRow['fname'];
-
+        $this->dob = $dataRow['dob'];
+        $this->experience = $dataRow['experience'];
+        $this->location = $dataRow['location'];
         $this->email = $dataRow['email'];
         $this->phone = $dataRow['phone'];
-        $this->message = $dataRow['message'];
+        $this->designation = $dataRow['designation'];
+        $this->applyDesc = $dataRow['applyDesc'];
+        $this->cv = $dataRow['cv'];
         $this->created_date = $dataRow['created_date'];
     }
 }

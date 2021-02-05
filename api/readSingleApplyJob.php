@@ -6,30 +6,35 @@
     header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
     include_once 'config/database.php';
-    include_once 'model/ContactUs.php';
+    include_once 'model/ApplyJob.php';
 
     $database = new Database();
     $db = $database->getConnection();
 
-    $item = new ContactUs($db);
+    $item = new ApplyJob($db);
 
     $item->id = isset($_GET['id']) ? $_GET['id'] : die();
   
-    $item->getSingleContactUs();
+    $item->getSingleApplyJob();
 
     if($item->name != null){
         // create array
-        $contactUs_arr = array(
-            "id" =>  $item->id,
-            "name" => $item->name,
-            "email" => $item->email,
-            "phone" => $item->phone,
-            "message" => $item->message,
-            "created_date" => $item->created_date
+        $applyJob_arr = array(
+            "id" => $id,
+                "fname" => $fname,
+                "dob" => $dob,
+                "experience" => $experience,
+                "location" => $location,
+                "email" => $email,
+                "phone" => $phone,
+                "designation" => $designation,
+                "applyDesc" => $applyDesc,
+                "cv" => $cv,
+                "created_date" => $created_date
         );
       
         http_response_code(200);
-        echo json_encode($contactUs_arr);
+        echo json_encode($applyJob_arr);
     }
       
     else{

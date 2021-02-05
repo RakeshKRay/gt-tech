@@ -22,4 +22,5 @@ CREATE TABLE `gttech`.`apply_job` (
   `designation` VARCHAR(45) NOT NULL,
   `applyDesc` VARCHAR(45) NOT NULL,
   `upload` VARCHAR(150) NULL,
+  `created_date` datetime NULL,
   PRIMARY KEY (`id`));
