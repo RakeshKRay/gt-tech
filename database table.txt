@@ -1,0 +1,25 @@
+schema : gttech
+username: root
+passworxd: root
+
+Table: contact_us
+Columns:
+id	int(11) AI PK
+name	varchar(100)
+email	varchar(100)
+phone	varchar(10)
+message	varchar(450)
+created_date	datetime
+
+CREATE TABLE `gttech`.`apply_job` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `fname` VARCHAR(75) NOT NULL,
+  `dob` DATE NOT NULL,
+  `experience` VARCHAR(45) NOT NULL,
+  `location` VARCHAR(45) NOT NULL,
+  `phone` VARCHAR(10) NOT NULL,
+  `email` VARCHAR(45) NOT NULL,
+  `designation` VARCHAR(45) NOT NULL,
+  `applyDesc` VARCHAR(45) NOT NULL,
+  `upload` VARCHAR(150) NULL,
+  PRIMARY KEY (`id`));
