@@ -11,7 +11,7 @@
     $database = new Database();
     $db = $database->getConnection();
 
-    $item = new ContactUs($db);
+    $item = new ApplyJob($db);
     $data = json_decode(file_get_contents("php://input"));
 
     $item->fname = $data->fname;
@@ -25,9 +25,9 @@
     $item->cv = $data->cv;
     $item->created_date = date('Y-m-d H:i:s');
     
-    if($item->createContactUs()){
-       echo json_encode('Contact added successfully.');
+    if($item->createApplyJob()){
+       echo json_encode('Request added successfully.');
     } else{
-        echo json_encode('Contact could not be added.');
+        echo json_encode('Request could not be added.');
     }
 ?>

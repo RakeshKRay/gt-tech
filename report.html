@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GT Tech</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"
+        integrity="sha512-F5QTlBqZlvuBEs9LQPqc1iZv2UMxcVXezbHzomzS6Df4MZMClge/8+gXrKw2fl5ysdk4rWjR0vKS7NNkfymaBQ=="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css"
+        integrity="sha512-kJ30H6g4NGhWopgdseRb8wTsyllFUYIx3hiUwmGAkgA9B/JbzUBDQVr2VVlWGde6sdBVOG7oU8AL35ORDuMm8g=="
+        crossorigin="anonymous" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet" />
+    <script>
+        $(function () {
+            $("#includeFooter").load("footer.html");
+            $("#includeHeader").load("header.html");
+        });
+    </script>
+    <style>
+        .nav-link[data-toggle].collapsed:before {
+            content: " ▾";
+        }
+
+        .nav-link[data-toggle]:not(.collapsed):before {
+            content: " ▴";
+        }
+    </style>
+</head>
+
+<body style="font-family: 'Nunito', sans-serif">
+    <!-- Navigation -->
+    <div id="includeHeader"></div>
+    <section class="topSection" style="padding-top: 6.3rem"></section>
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div id="menu" class="col-3 bg-light" >
+                    <ul class="nav flex-column flex-nowrap overflow-hidden">
+                        <li class="nav-item">
+                            <a class="nav-link text-truncate" href="#"><i class="fas fa-tachometer-alt"></i> <span
+                                    class="d-none d-sm-inline">Dashboard</span></a>
+                        </li>
+                        <!--<li class="nav-item">
+                            <a class="nav-link collapsed text-truncate" href="#submenu1" data-toggle="collapse"
+                                data-target="#submenu1"><i class="fa fa-table"></i> <span
+                                    class="d-none d-sm-inline">Reports</span></a>
+                            <div class="collapse" id="submenu1" aria-expanded="false">
+                                <ul class="flex-column pl-4 nav">
+                                    <li class="nav-item"><i class="fas fa-file-signature"></i><a class="nav-link py-0" href="#"><span>Contact Us</span></a></li>
+                                    <li class="nav-item"><i class="fas fa-user-md"></i><a class="nav-link py-0" href="#"><span>Apply Job</span></a></li>
+                                     <li class="nav-item">
+                                        <a class="nav-link collapsed py-1" href="#submenu1sub1" data-toggle="collapse"
+                                            data-target="#submenu1sub1"><span>Customers</span></a>
+                                        <div class="collapse" id="submenu1sub1" aria-expanded="false">
+                                            <ul class="flex-column nav pl-4">
+                                                <li class="nav-item">
+                                                    <a class="nav-link p-1" href="#">
+                                                        <i class="fa fa-fw fa-clock-o"></i> Daily </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link p-1" href="#">
+                                                        <i class="fa fa-fw fa-dashboard"></i> Dashboard </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link p-1" href="#">
+                                                        <i class="fa fa-fw fa-bar-chart"></i> Charts </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link p-1" href="#">
+                                                        <i class="fa fa-fw fa-compass"></i> Areas </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li> 
+                                </ul>
+                            </div>
+                        </li>-->
+                        <li class="nav-item"><a id="contactUsFetch" class="nav-link text-truncate" href="#"><i
+                                    class="fas fa-file-signature"></i>
+                                <span class="d-none d-sm-inline">Contact Us</span></a></li>
+                        <li class="nav-item"><a id="applyJobFetch" class="nav-link text-truncate" href="#"><i class="fas fa-user-md"></i>
+                                <span class="d-none d-sm-inline">Apply Job</span></a></li>
+                    </ul>
+                </div>
+                <div id="" class="col-9">
+                    <div id="contactUsDetails">
+                        <div id="LoadingStatus" style="color:red"></div>
+                        <table id="contackustbl" class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Message</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+
+                        </table>
+                    </div>
+                    <div id="applyjobDetails">
+                        <div id="applyjobLoadingStatus" style="color:red"></div>
+                        <table id="applyjobtbl" class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>DOB</th>
+                                    <th>Experience</th>
+                                    <th>Location</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>designation</th>
+                                    <th>applyDesc</th>
+                                    <th>cv</th>
+                                    <th>created_date</th>
+                                </tr>
+                            </thead>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <script src="api/js/main.js"></script>
+
+    <!--- Footer -->
+    <footer class="footer" style="padding-top: 0.5rem" id="includeFooter"></footer>
+</body>
+
+</html>

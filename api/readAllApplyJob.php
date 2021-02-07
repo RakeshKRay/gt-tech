@@ -38,9 +38,9 @@
                 "created_date" => $created_date
             );
 
-            array_push($contactUsArr["body"], $e);
+            array_push($applyJobArr["body"], $e);
         }
-        echo json_encode($contactUsArr);
+        echo json_encode($applyJobArr);
     }
 
     else{

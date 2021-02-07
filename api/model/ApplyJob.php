@@ -33,7 +33,7 @@ class ApplyJob{
     }
 
     // CREATE
-    public function createContactUs(){
+    public function createApplyJob(){
         $sqlQuery = "INSERT INTO
                     ". $this->db_table ."
                 SET
@@ -68,15 +68,18 @@ class ApplyJob{
         $stmt->bindParam(":applyDesc", $this->applyDesc);
         $stmt->bindParam(":cv", $this->cv);
         $stmt->bindParam(":created_date", $this->created_date);
-    
+        try{
         if($stmt->execute()){
            return true;
         }
+    } catch(PDOException $e) {
+        echo "Error: " . $e->getMessage();
+      }
         return false;
     }
 
     // READ single
-    public function getSingleContactUs(){
+    public function getSingleApplyJob(){
         $sqlQuery = "SELECT * FROM ". $this->db_table ." WHERE id = ? LIMIT 0,1";
 
         $stmt = $this->conn->prepare($sqlQuery);

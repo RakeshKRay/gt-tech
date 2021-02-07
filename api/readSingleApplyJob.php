@@ -17,7 +17,7 @@
   
     $item->getSingleApplyJob();
 
-    if($item->name != null){
+    if($item->fname != null){
         // create array
         $applyJob_arr = array(
             "id" => $id,

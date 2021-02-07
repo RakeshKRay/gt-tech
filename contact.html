@@ -131,12 +131,14 @@
         $.ajax({
             type: "POST",
             url: "api/createContactUs.php",
-            data: {
-              "name": name,
-              "email": email,
-              "phone": phone,
-              "message": message
-            }, // getting filed value in serialize form
+            data: JSON.stringify ({
+              "name": $name,
+              "email": $email,
+              "phone": $phone,
+              "message": $message
+            }), // getting filed value in serialize form
+            contentType: "application/json",
+            dataType: 'json'
           })
           .done(function (data) {
             // if getting done then call.
@@ -147,10 +149,12 @@
           })
           .fail(function () {
             // if fail then getting message
-
+            console.log("data");
             // just in case posting your form failed
             alert("Posting failed.");
-          });
+          }).always(function() {
+                console.log("always");
+            });
 
         // to prevent refreshing the whole page page
         return false;
