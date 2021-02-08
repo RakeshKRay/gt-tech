@@ -213,7 +213,7 @@
             </div>
         </div>
     </section>
-    
+
     <section class="oddSection" style="background-color: #F5F5F6;">
         <div class="container-fluid ">
             <div class="container">
@@ -819,21 +819,22 @@
 
                     </div>
                     <div class="modal-body">
-                        <form action="applyUs.php" method="post">
+                        <span id="statusMsg"></span>
+                        <form id="fupForm" enctype="multipart/form-data">
 
                             <div class="col_half">
-                                <input type="text" id="fname" name="fname" value=""
-                                    placeholder="Full Name" class="form-control form-control-pill required">
+                                <input type="text" id="fname" name="fname" value="" placeholder="Full Name"
+                                    class="form-control form-control-pill required">
                             </div>
                             <div class="col_half col_last">
-                                <input type="date" id="dob" name="dob" value=""
-                                    placeholder="Date of Birth" class="required date form-control form-control-pill">
+                                <input type="date" id="dob" name="dob" value="" placeholder="Date of Birth"
+                                    class="required date form-control form-control-pill">
                             </div>
                             <div class="clear"></div>
 
                             <div class="col_half">
-                                <input type="number" id="experience" name="experience"
-                                    placeholder="Years of Experience" value="" class="form-control form-control-pill">
+                                <input type="number" id="experience" name="experience" placeholder="Years of Experience"
+                                    value="" class="form-control form-control-pill">
                             </div>
                             <div class="col_half col_last">
                                 <input type="text" id="location" name="location" placeholder="Current location" value=""
@@ -842,35 +843,35 @@
                             <div class="clear"></div>
 
                             <div class="col_half">
-                                <input type="number" id="phone" name="phone" placeholder="Phone no"
-                                    value="" class="form-control form-control-pill">
+                                <input type="number" id="phone" name="phone" placeholder="Phone no" value=""
+                                    class="form-control form-control-pill">
                             </div>
                             <div class="col_half col_last">
-                                <input type="email" id="email" name="email" placeholder="Email Id"
-                                    value="" class="required form-control form-control-pill">
+                                <input type="email" id="email" name="email" placeholder="Email Id" value=""
+                                    class="required form-control form-control-pill">
                             </div>
                             <div class="clear"></div>
 
                             <div class="col_half">
-                                <input type="text" id="designation" name="designation"
-                                    placeholder="Present Designation" value="" class="form-control form-control-pill">
+                                <input type="text" id="designation" name="designation" placeholder="Present Designation"
+                                    value="" class="form-control form-control-pill">
                             </div>
                             <div class="col_half col_last">
-                                <input type="text" id="applyDesc" name="applyDesc"
-                                    placeholder="Applying for" value="" class="required form-control form-control-pill">
+                                <input type="text" id="applyDesc" name="applyDesc" placeholder="Applying for" value=""
+                                    class="required form-control form-control-pill">
                             </div>
                             <div class="clear"></div>
                             <div class="col_half"></div>
                             <div class="col_half col_last">
-                                <input type="file" id="upload" hidden
-                                    accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
-                                <label class="update-file-label" for="upload">Upload CV</label>
+                                <input type="file" id="file" name="file" hidden
+                                    accept=".pdf,.doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                                <label class="update-file-label" for="file">Upload CV</label>
                                 <span id="file-chosen">No file chosen</span>
                             </div>
                             <div class="clear"></div>
                             <div class="col_full">
-                                <button class="button button-circle button-large" type="submit"
-                                    id="submitApply" name="request" value="submit">Apply Now</button>
+                                <button class="button button-circle button-large" type="submit" id="submitApply"
+                                    name="request" value="submit">Apply Now</button>
                             </div>
                         </form>
                     </div>
@@ -1084,13 +1085,56 @@
     }
 </style>
 <script>
-    const actualBtn = document.getElementById('upload');
+    const actualBtn = document.getElementById('file');
 
     const fileChosen = document.getElementById('file-chosen');
 
     actualBtn.addEventListener('change', function () {
         fileChosen.textContent = this.files[0].name
     })
+</script>
+<script>
+    // File type validation
+    $(document).ready(function (e) {
+        $("#file").change(function () {
+            var file = this.files[0];
+            var fileType = file.type;
+            var match = ['application/pdf', 'application/msword', 'application/vnd.ms-office'];
+            if (!((fileType == match[0]) || (fileType == match[1]) || (fileType == match[2]) )) {
+                alert('Sorry, only PDF, DOC files are allowed to upload.');
+                $("#file").val('');
+                return false;
+            }
+        });
+        // Submit form data via Ajax
+        $("#fupForm").on('submit', function (e) {
+            e.preventDefault();
+            $.ajax({
+                type: 'POST',
+                url: 'api/createApplyJob.php',
+                data: new FormData(this),
+                dataType: 'json',
+                contentType: false,
+                cache: false,
+                processData: false,
+                beforeSend: function () {
+                    $('#submitApply').attr("disabled", "disabled");
+                    $('#fupForm').css("opacity", ".5");
+                },
+                success: function (response) { //console.log(response);
+                    $('#statusMsg').html('');
+                    if (response.status == 1) {
+                        $('#fupForm')[0].reset();
+                        $('#statusMsg').html('<p class="alert alert-success">' + response.message + '</p>');
+                    } else {
+                        $('#statusMsg').html('<p class="alert alert-danger">' + response.message + '</p>');
+                    }
+                    $('#fupForm').css("opacity", "");
+                    $("#submitApply").removeAttr("disabled");
+                }
+            });
+        });
+    });
 </script>
 
 </html>
