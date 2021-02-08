@@ -42,19 +42,21 @@
     <!-- Navigation -->
     <div id="includeHeader"></div>
     <section class="topSection"></section>
-    
+
     <section>
+        
         <div>
             <nav aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Products</li>
-              </ol>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Products</li>
+                </ol>
             </nav>
-          </div>
+        </div>
         <h1 class="headingofpage text-center">Product Design &amp; Development</h1>
         <hr />
-        <div id="slidesp" class="carousel slide " data-ride="carousel" style="width: 90%;margin: auto;height: 220px">
+        
+        <div id="slidesp" class="carousel slide ProductDesignCarousel" data-ride="carousel">
             <ul class="carousel-indicators">
                 <li data-target="#slidesp" data-slide-to="0" class="active"></li>
                 <li data-target="#slidesp" data-slide-to="1"></li>
@@ -154,72 +156,88 @@
             </a>
         </div>
     </section>
+    <style>
+    .ProductDesignCarousel{
+        width: 90%;
+        margin: auto;
+        height: 220px;
+      }
+      @media (max-width: 768px) {
+        .ProductDesignCarousel{
+        width: 90%;
+        margin: auto;
+        height: auto;
+      }
+      }
+    </style>
 
     <section>
-        <div class=" row responsive centered">
-            <div>
-                <div class="card" style="width: 15rem;">
-                    <img class="card-img-top cardImgSlick" src="img/e-rick/Z13.JPG" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text text-center">E-Auto design.</p>
+        <div class="container-fluid padding">
+            <div class=" row responsive centered">
+                <div>
+                    <div class="card" style="width: 15rem;">
+                        <img class="card-img-top cardImgSlick" src="img/e-rick/Z13.JPG" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text text-center">E-Auto design.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div class="card" style="width: 15rem;">
-                    <img class="card-img-top cardImgSlick" src="img/3d-print/_MG_6121.JPG" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text text-center">3D Printed Face.</p>
+                <div>
+                    <div class="card" style="width: 15rem;">
+                        <img class="card-img-top cardImgSlick" src="img/3d-print/_MG_6121.JPG" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text text-center">3D Printed Face.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div class="card" style="width: 15rem;">
-                    <img class="card-img-top cardImgSlick" src="img/e-rick/Model.7.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text text-center">E-Vehicle Model</p>
+                <div>
+                    <div class="card" style="width: 15rem;">
+                        <img class="card-img-top cardImgSlick" src="img/e-rick/Model.7.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text text-center">E-Vehicle Model</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div class="card" style="width: 15rem;">
-                    <img class="card-img-top cardImgSlick" src="img/3d-print/_MG_6131.JPG" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text text-center">3D Printed Port.</p>
+                <div>
+                    <div class="card" style="width: 15rem;">
+                        <img class="card-img-top cardImgSlick" src="img/3d-print/_MG_6131.JPG" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text text-center">3D Printed Port.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div>
-                <div class="card" style="width: 15rem;">
-                    <img class="card-img-top cardImgSlick" src="img/e-rick/E-rickshaw.png" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text text-center">E-Rickshaw Design.</p>
+                <div>
+                    <div class="card" style="width: 15rem;">
+                        <img class="card-img-top cardImgSlick" src="img/e-rick/E-rickshaw.png" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text text-center">E-Rickshaw Design.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div>
-                <div class="card" style="width: 15rem;">
-                    <img class="card-img-top cardImgSlick" src="img/3d-print/_MG_6200.JPG" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text text-center">3D Printed Heart.</p>
+                <div>
+                    <div class="card" style="width: 15rem;">
+                        <img class="card-img-top cardImgSlick" src="img/3d-print/_MG_6200.JPG" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text text-center">3D Printed Heart.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div class="card" style="width: 15rem;">
-                    <img class="card-img-top cardImgSlick" src="img/railway.png" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text text-center">Railway Engine Design.</p>
+                <div>
+                    <div class="card" style="width: 15rem;">
+                        <img class="card-img-top cardImgSlick" src="img/railway.png" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text text-center">Railway Engine Design.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div class="card" style="width: 15rem;">
-                    <img class="card-img-top cardImgSlick" src="img/3d-print/_MG_6225.JPG" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text text-center">3D Printed God.</p>
+                <div>
+                    <div class="card" style="width: 15rem;">
+                        <img class="card-img-top cardImgSlick" src="img/3d-print/_MG_6225.JPG" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text text-center">3D Printed God.</p>
+                        </div>
                     </div>
                 </div>
             </div>

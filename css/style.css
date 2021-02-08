@@ -82,11 +82,10 @@ section {
   margin-right: 2rem;
 }
 
-section.oddSection {
+section .oddSection {
   margin-left: 0rem;
   margin-right: 0rem;
   padding:  0 2rem 0 2rem;
-  /* background-color: #f8f6f3; */
 }
 
 
@@ -610,7 +609,11 @@ hr.light-100 {
   .display-4 {
     font-size: 160%;
   }
-
+  section .oddSection {
+    margin-left: 0rem;
+    margin-right: 0rem;
+    padding:  0;
+  }
   section {
     padding-top: 0.5rem;
     margin-left: 0.5rem;
@@ -647,9 +650,11 @@ hr.light-100 {
     height: 55vh;
     min-height: 17rem;
   }
+  
 }
 
 @media (max-width: 490px) {
+  
   .name-header {
     font-family: "Audiowide", cursive;
     font-size: 25px;
