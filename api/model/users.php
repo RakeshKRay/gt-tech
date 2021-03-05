@@ -85,14 +85,14 @@ class Users{
         $stmt = $this->conn->prepare($sqlQuery);
 
         $stmt->bindParam(1, $this->email);
-        $stmt->bindParam(1, $this->password);
+        $stmt->bindParam(2, $this->password);
         $stmt->execute();
         $num = $stmt->rowCount();
         if($num>0){
             $dataRow = $stmt->fetch(PDO::FETCH_ASSOC);
             $this->id = $dataRow['id'];
             $this->fname = $dataRow['fname'];
-            $this->email = $dataRow['lname'];
+            $this->lname = $dataRow['lname'];
             $this->created_date = $dataRow['created_date'];
             $this->role = $dataRow['role'];
             return true;
